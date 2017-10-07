@@ -14,6 +14,9 @@
 		233666FE1F8783F100E8044B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233666FC1F8783F100E8044B /* LaunchScreen.storyboard */; };
 		233667091F8783F100E8044B /* heimusubi_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233667081F8783F100E8044B /* heimusubi_iosTests.swift */; };
 		233667141F8783F100E8044B /* heimusubi_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233667131F8783F100E8044B /* heimusubi_iosUITests.swift */; };
+		25EFBBD1C3AC7524C1F2D9C3 /* Pods_heimusubi_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB4F9989DCA3AFDA8D4915 /* Pods_heimusubi_ios.framework */; };
+		9A8829DEE1ED2A72803C81B8 /* Pods_heimusubi_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07D34A4AB9D00372B984169 /* Pods_heimusubi_iosUITests.framework */; };
+		9E7EC52B167840A0043EA0C2 /* Pods_heimusubi_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926FE17E55AC887DECAFB0C2 /* Pods_heimusubi_iosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		176EADEF480647BB5835EFED /* Pods-heimusubi-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-iosUITests/Pods-heimusubi-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D7BF906EFA36A1FCBFA02EC /* Pods-heimusubi-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-iosTests/Pods-heimusubi-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		233666F01F8783F100E8044B /* heimusubi-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "heimusubi-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		233666F31F8783F100E8044B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		233666F51F8783F100E8044B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		2336670F1F8783F100E8044B /* heimusubi-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "heimusubi-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		233667131F8783F100E8044B /* heimusubi_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heimusubi_iosUITests.swift; sourceTree = "<group>"; };
 		233667151F8783F100E8044B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B34AC36D4D610A544990875 /* Pods-heimusubi-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-iosUITests/Pods-heimusubi-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		926FE17E55AC887DECAFB0C2 /* Pods_heimusubi_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BBDDECADEA59180DD2CA0F /* Pods-heimusubi-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-ios/Pods-heimusubi-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		A07D34A4AB9D00372B984169 /* Pods_heimusubi_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4CB4F9989DCA3AFDA8D4915 /* Pods_heimusubi_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91122B30ACC320794C21712 /* Pods-heimusubi-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-ios/Pods-heimusubi-ios.release.xcconfig"; sourceTree = "<group>"; };
+		D6BE892B867515D1B1CCD6DD /* Pods-heimusubi-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-iosTests/Pods-heimusubi-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25EFBBD1C3AC7524C1F2D9C3 /* Pods_heimusubi_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E7EC52B167840A0043EA0C2 /* Pods_heimusubi_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8829DEE1ED2A72803C81B8 /* Pods_heimusubi_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A64E4C1D44C4D4792F21D8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4CB4F9989DCA3AFDA8D4915 /* Pods_heimusubi_ios.framework */,
+				926FE17E55AC887DECAFB0C2 /* Pods_heimusubi_iosTests.framework */,
+				A07D34A4AB9D00372B984169 /* Pods_heimusubi_iosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		233666E71F8783F100E8044B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				233667071F8783F100E8044B /* heimusubi-iosTests */,
 				233667121F8783F100E8044B /* heimusubi-iosUITests */,
 				233666F11F8783F100E8044B /* Products */,
+				286B533E1DA52AD3F69E9852 /* Pods */,
+				0A64E4C1D44C4D4792F21D8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,19 @@
 			path = "heimusubi-iosUITests";
 			sourceTree = "<group>";
 		};
+		286B533E1DA52AD3F69E9852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96BBDDECADEA59180DD2CA0F /* Pods-heimusubi-ios.debug.xcconfig */,
+				C91122B30ACC320794C21712 /* Pods-heimusubi-ios.release.xcconfig */,
+				D6BE892B867515D1B1CCD6DD /* Pods-heimusubi-iosTests.debug.xcconfig */,
+				1D7BF906EFA36A1FCBFA02EC /* Pods-heimusubi-iosTests.release.xcconfig */,
+				176EADEF480647BB5835EFED /* Pods-heimusubi-iosUITests.debug.xcconfig */,
+				2B34AC36D4D610A544990875 /* Pods-heimusubi-iosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 233667181F8783F100E8044B /* Build configuration list for PBXNativeTarget "heimusubi-ios" */;
 			buildPhases = (
+				81F921C037055B424BE641F0 /* [CP] Check Pods Manifest.lock */,
 				233666EC1F8783F100E8044B /* Sources */,
 				233666ED1F8783F100E8044B /* Frameworks */,
 				233666EE1F8783F100E8044B /* Resources */,
+				B0ACB4D55C7397790968C645 /* [CP] Embed Pods Frameworks */,
+				E5ABC64B30FE621A2A8C0E51 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2336671B1F8783F100E8044B /* Build configuration list for PBXNativeTarget "heimusubi-iosTests" */;
 			buildPhases = (
+				1655D337AD1FCE1C203C5D7E /* [CP] Check Pods Manifest.lock */,
 				233667001F8783F100E8044B /* Sources */,
 				233667011F8783F100E8044B /* Frameworks */,
 				233667021F8783F100E8044B /* Resources */,
+				8B8BAD983C463632CA328157 /* [CP] Embed Pods Frameworks */,
+				F6B0BAE4CCE2D815943B1C96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2336671E1F8783F100E8044B /* Build configuration list for PBXNativeTarget "heimusubi-iosUITests" */;
 			buildPhases = (
+				7CB006A61078F826293795DC /* [CP] Check Pods Manifest.lock */,
 				2336670B1F8783F100E8044B /* Sources */,
 				2336670C1F8783F100E8044B /* Frameworks */,
 				2336670D1F8783F100E8044B /* Resources */,
+				A05B700294B380F6F9900B73 /* [CP] Embed Pods Frameworks */,
+				42D4434EB748AD340414A946 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1655D337AD1FCE1C203C5D7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-heimusubi-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42D4434EB748AD340414A946 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-heimusubi-iosUITests/Pods-heimusubi-iosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CB006A61078F826293795DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-heimusubi-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F921C037055B424BE641F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-heimusubi-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B8BAD983C463632CA328157 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-heimusubi-iosTests/Pods-heimusubi-iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A05B700294B380F6F9900B73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-heimusubi-iosUITests/Pods-heimusubi-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0ACB4D55C7397790968C645 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-heimusubi-ios/Pods-heimusubi-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-heimusubi-ios/Pods-heimusubi-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5ABC64B30FE621A2A8C0E51 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-heimusubi-ios/Pods-heimusubi-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6B0BAE4CCE2D815943B1C96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-heimusubi-iosTests/Pods-heimusubi-iosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		233666EC1F8783F100E8044B /* Sources */ = {
@@ -424,6 +623,7 @@
 		};
 		233667191F8783F100E8044B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96BBDDECADEA59180DD2CA0F /* Pods-heimusubi-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +638,7 @@
 		};
 		2336671A1F8783F100E8044B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91122B30ACC320794C21712 /* Pods-heimusubi-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +653,7 @@
 		};
 		2336671C1F8783F100E8044B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6BE892B867515D1B1CCD6DD /* Pods-heimusubi-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +670,7 @@
 		};
 		2336671D1F8783F100E8044B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7BF906EFA36A1FCBFA02EC /* Pods-heimusubi-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +687,7 @@
 		};
 		2336671F1F8783F100E8044B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176EADEF480647BB5835EFED /* Pods-heimusubi-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +703,7 @@
 		};
 		233667201F8783F100E8044B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B34AC36D4D610A544990875 /* Pods-heimusubi-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
