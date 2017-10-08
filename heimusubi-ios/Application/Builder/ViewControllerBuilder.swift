@@ -8,9 +8,8 @@
 
 import UIKit
 
-protocol ViewControlellerBuilder {
+protocol ViewControllerBuilder {
     associatedtype ViewController: UIViewController
     
     static func build() -> ViewController
 }
-
