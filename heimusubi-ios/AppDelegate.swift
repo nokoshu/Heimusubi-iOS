@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  heimusubi-ios
 //
-//  Created by 竹之下遼 on 2017/10/06.
-//  Copyright © 2017年 竹之下遼. All rights reserved.
+//  Created by RyoBamboo on 2017/10/06.
+//  Copyright © 2017年 RyoBamboo. All rights reserved.
 //
 
 import UIKit

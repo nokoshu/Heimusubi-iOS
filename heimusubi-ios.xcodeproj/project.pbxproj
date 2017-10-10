@@ -15,7 +15,11 @@
 		233667141F8783F100E8044B /* heimusubi_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233667131F8783F100E8044B /* heimusubi_iosUITests.swift */; };
 		234B04AA1F8A54F40038E76D /* ViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */; };
 		234B04AC1F8A58F80038E76D /* SigninViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */; };
-		23CE6AFD1F8B399B004457A0 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE6AFB1F8B399B004457A0 /* SigninViewController.swift */; };
+		239FC2681F8C80B300BE1AE6 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2661F8C80B300BE1AE6 /* SigninViewController.swift */; };
+		239FC2691F8C80B300BE1AE6 /* SigninViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239FC2671F8C80B300BE1AE6 /* SigninViewController.xib */; };
+		239FC26E1F8C827300BE1AE6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC26D1F8C827300BE1AE6 /* CustomButton.swift */; };
+		239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2701F8C8ADC00BE1AE6 /* Const.swift */; };
+		239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */; };
 		64D9D72A80C4921FF6FBF242 /* Pods_heimusubi_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C39F365DA9D98A837A4F6D /* Pods_heimusubi_iosTests.framework */; };
 		8EC892BD104542C054C05D7E /* Pods_heimusubi_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E3E6EEC9478D93BD6D512A /* Pods_heimusubi_iosUITests.framework */; };
 /* End PBXBuildFile section */
@@ -52,7 +56,11 @@
 		233667151F8783F100E8044B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuilder.swift; sourceTree = "<group>"; };
 		234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewControllerBuilder.swift; sourceTree = "<group>"; };
-		23CE6AFB1F8B399B004457A0 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		239FC2661F8C80B300BE1AE6 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		239FC2671F8C80B300BE1AE6 /* SigninViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninViewController.xib; sourceTree = "<group>"; };
+		239FC26D1F8C827300BE1AE6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		239FC2701F8C8ADC00BE1AE6 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		32DCF064655524172822697B /* Pods_heimusubi_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D524FDFC33B4C7F0A37FF07 /* Pods-heimusubi-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-iosUITests/Pods-heimusubi-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		57E3E6EEC9478D93BD6D512A /* Pods_heimusubi_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +158,7 @@
 		234B04A31F8A52400038E76D /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				239FC26F1F8C8AC600BE1AE6 /* Const */,
 				234B04A81F8A54D00038E76D /* Builder */,
 			);
 			path = Application;
@@ -197,7 +206,7 @@
 		234B04AD1F8A5B780038E76D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				234B04B01F8A5BAD0038E76D /* View */,
+				239FC26A1F8C822A00BE1AE6 /* View */,
 				234B04AF1F8A5B9A0038E76D /* ViewController */,
 			);
 			path = UI;
@@ -213,16 +222,43 @@
 		234B04AF1F8A5B9A0038E76D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				23CE6AFB1F8B399B004457A0 /* SigninViewController.swift */,
+				239FC2661F8C80B300BE1AE6 /* SigninViewController.swift */,
+				239FC2671F8C80B300BE1AE6 /* SigninViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		234B04B01F8A5BAD0038E76D /* View */ = {
+		239FC26A1F8C822A00BE1AE6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				239FC26C1F8C824700BE1AE6 /* TextField */,
+				239FC26B1F8C823D00BE1AE6 /* Button */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		239FC26B1F8C823D00BE1AE6 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				239FC26D1F8C827300BE1AE6 /* CustomButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		239FC26C1F8C824700BE1AE6 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		239FC26F1F8C8AC600BE1AE6 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				239FC2701F8C8ADC00BE1AE6 /* Const.swift */,
+			);
+			path = Const;
 			sourceTree = "<group>";
 		};
 		A69BD0ED2C796D589A6B49D4 /* Frameworks */ = {
@@ -364,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239FC2691F8C80B300BE1AE6 /* SigninViewController.xib in Resources */,
 				233666FE1F8783F100E8044B /* LaunchScreen.storyboard in Resources */,
 				233666FB1F8783F100E8044B /* Assets.xcassets in Resources */,
 			);
@@ -540,10 +577,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23CE6AFD1F8B399B004457A0 /* SigninViewController.swift in Sources */,
+				239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */,
+				239FC2681F8C80B300BE1AE6 /* SigninViewController.swift in Sources */,
 				234B04AA1F8A54F40038E76D /* ViewControllerBuilder.swift in Sources */,
 				234B04AC1F8A58F80038E76D /* SigninViewControllerBuilder.swift in Sources */,
 				233666F41F8783F100E8044B /* AppDelegate.swift in Sources */,
+				239FC26E1F8C827300BE1AE6 /* CustomButton.swift in Sources */,
+				239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
