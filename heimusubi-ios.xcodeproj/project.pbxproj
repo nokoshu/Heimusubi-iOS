@@ -130,7 +130,6 @@
 				234B04A71F8A52E20038E76D /* Presentation */,
 				234B04A61F8A52D70038E76D /* Domain */,
 				234B04A41F8A52510038E76D /* Data */,
-				234B04A51F8A525A0038E76D /* Storyboards */,
 				233666FA1F8783F100E8044B /* Assets.xcassets */,
 				233666F31F8783F100E8044B /* AppDelegate.swift */,
 				233666FC1F8783F100E8044B /* LaunchScreen.storyboard */,
@@ -171,13 +170,6 @@
 			children = (
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		234B04A51F8A525A0038E76D /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		234B04A61F8A52D70038E76D /* Domain */ = {

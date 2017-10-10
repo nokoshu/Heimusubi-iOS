@@ -1,13 +1,15 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "heimusubi_logo_20pt_2x.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "heimusubi_logo_20pt_3x.png",
       "scale" : "3x"
     },
     {
@@ -31,8 +33,9 @@
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "heimusubi_logo_120pt.png",
       "scale" : "2x"
     },
     {
