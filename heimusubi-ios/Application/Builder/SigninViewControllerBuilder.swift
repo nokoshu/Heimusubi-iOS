@@ -13,6 +13,9 @@ struct SigninViewControllerBuilder: ViewControllerBuilder {
     
     static func build() -> ViewController {
         let viewController = SigninViewController()
+        let presenter = SigninPresenterImplemention()
+        
+        viewController.inject(presenter: presenter)
         
         return viewController
     }
