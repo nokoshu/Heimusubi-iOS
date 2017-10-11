@@ -21,6 +21,7 @@
 		239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2701F8C8ADC00BE1AE6 /* Const.swift */; };
 		239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */; };
 		239FC2751F8CB49C00BE1AE6 /* SigninPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */; };
+		23FDEDAE1F8E1B14005A4DF9 /* SigninModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FDEDAD1F8E1B14005A4DF9 /* SigninModel.swift */; };
 		64D9D72A80C4921FF6FBF242 /* Pods_heimusubi_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C39F365DA9D98A837A4F6D /* Pods_heimusubi_iosTests.framework */; };
 		8EC892BD104542C054C05D7E /* Pods_heimusubi_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E3E6EEC9478D93BD6D512A /* Pods_heimusubi_iosUITests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		239FC2701F8C8ADC00BE1AE6 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninPresenter.swift; sourceTree = "<group>"; };
+		23FDEDAD1F8E1B14005A4DF9 /* SigninModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninModel.swift; sourceTree = "<group>"; };
 		32DCF064655524172822697B /* Pods_heimusubi_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D524FDFC33B4C7F0A37FF07 /* Pods-heimusubi-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-iosUITests/Pods-heimusubi-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		57E3E6EEC9478D93BD6D512A /* Pods_heimusubi_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +177,7 @@
 		234B04A61F8A52D70038E76D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				23FDEDAA1F8E18A4005A4DF9 /* Model */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -254,6 +257,14 @@
 				239FC2701F8C8ADC00BE1AE6 /* Const.swift */,
 			);
 			path = Const;
+			sourceTree = "<group>";
+		};
+		23FDEDAA1F8E18A4005A4DF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23FDEDAD1F8E1B14005A4DF9 /* SigninModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A69BD0ED2C796D589A6B49D4 /* Frameworks */ = {
@@ -579,6 +590,7 @@
 				234B04AC1F8A58F80038E76D /* SigninViewControllerBuilder.swift in Sources */,
 				233666F41F8783F100E8044B /* AppDelegate.swift in Sources */,
 				239FC26E1F8C827300BE1AE6 /* CustomButton.swift in Sources */,
+				23FDEDAE1F8E1B14005A4DF9 /* SigninModel.swift in Sources */,
 				239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

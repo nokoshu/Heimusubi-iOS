@@ -9,16 +9,15 @@
 import Foundation
 
 protocol SigninPresenter {
-    func signinButtonPressed(parameters: LoginParameters)
+    func signinButtonPressed(parameters: SigninParameters)
 }
 
 class SigninPresenterImplemention: SigninPresenter {
-    func signinButtonPressed(parameters: LoginParameters) {
-        print("test")
+    func signinButtonPressed(parameters: SigninParameters) {
     }
 }
 
-struct LoginParameters {
+struct SigninParameters {
     var email: String
     var password: String
 }

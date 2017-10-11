@@ -17,6 +17,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SigninViewController" customModule="heimusubi_ios" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="rL1-4O-47L" id="vAF-MQ-iue"/>
+                <outlet property="passwordTextField" destination="kt7-oX-EbG" id="4Qe-it-PXH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -55,6 +57,9 @@
                             <color key="value" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="signinButtonPressed:" destination="-1" eventType="touchUpInside" id="uQz-WT-F8J"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5o-6A-ODN" customClass="CustomButton" customModule="heimusubi_ios" customModuleProvider="target">
                     <rect key="frame" x="195" y="499" width="121" height="37"/>
@@ -105,7 +110,7 @@
                     <color key="textColor" red="0.59999999999999998" green="0.5607843137254902" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kt7-oX-EbG">
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kt7-oX-EbG" customClass="CustomTextField" customModule="heimusubi_ios" customModuleProvider="target">
                     <rect key="frame" x="58" y="441" width="258" height="33"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.8666666666666667" green="0.85490196078431369" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

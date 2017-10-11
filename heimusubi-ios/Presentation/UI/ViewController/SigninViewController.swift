@@ -12,6 +12,9 @@ class SigninViewController: UIViewController {
     
     fileprivate var presenter: SigninPresenter!
 
+    @IBOutlet weak var emailTextField: CustomTextField!
+    @IBOutlet weak var passwordTextField: CustomTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -23,6 +26,11 @@ class SigninViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func signinButtonPressed(_ sender: Any) {
+    
+    }
+    
     /*
     // MARK: - Navigation
 
