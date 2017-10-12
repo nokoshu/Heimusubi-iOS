@@ -21,6 +21,7 @@ class SigninViewController: UIViewController, UITextFieldDelegate, UIScrollViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        backgroundScrollView.delegate = self
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
@@ -57,6 +58,16 @@ class SigninViewController: UIViewController, UITextFieldDelegate, UIScrollViewD
         return true
     }
     
-    
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        backgroundScrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+        view.endEditing(true)
+    }
+}
+
+
+// Expand UIScrollView to notify UIViewController of events on UIScrollView
+extension UIScrollView {
+    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.next?.touchesBegan(touches, with: event)
+    }
 }
