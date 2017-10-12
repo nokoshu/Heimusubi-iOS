@@ -8,15 +8,21 @@
 
 import UIKit
 
-class SigninViewController: UIViewController {
+class SigninViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
     
     fileprivate var presenter: SigninPresenter!
+    
+    fileprivate var activeTextField: CustomTextField?
 
+    @IBOutlet weak var backgroundScrollView: UIScrollView!
     @IBOutlet weak var emailTextField: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     func inject(presenter: SigninPresenter) {
@@ -27,18 +33,30 @@ class SigninViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    
+    /*-------------------------------------------------
+     * Action of UI Elements
+     *-----------------------------------------------*/
     @IBAction func signinButtonPressed(_ sender: Any) {
-    
+        
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    /*-------------------------------------------------
+     * Delegate Method of UITextField and UIScrollView
+     *-----------------------------------------------*/
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        activeTextField = textField as? CustomTextField
+        backgroundScrollView.setContentOffset(CGPoint(x: 0.0, y: 160.0), animated: true)
+        return true
     }
-    */
-
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        backgroundScrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+        return true
+    }
+    
+    
+    
 }
