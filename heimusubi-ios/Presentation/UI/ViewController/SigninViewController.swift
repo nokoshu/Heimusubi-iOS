@@ -39,7 +39,9 @@ class SigninViewController: UIViewController, UITextFieldDelegate, UIScrollViewD
      * Action of UI Elements
      *-----------------------------------------------*/
     @IBAction func signinButtonPressed(_ sender: Any) {
-        
+        if let email = emailTextField.text, let plaintextPassword = passwordTextField.text {
+                self.presenter.signinButtonPressed(email: email, plaintextPassword: plaintextPassword)
+        }
     }
     
     
