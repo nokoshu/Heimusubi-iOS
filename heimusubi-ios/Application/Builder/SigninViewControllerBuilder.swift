@@ -12,9 +12,13 @@ struct SigninViewControllerBuilder: ViewControllerBuilder {
     typealias ViewController = SigninViewController
     
     static func build() -> ViewController {
-        let viewController = SigninViewController()
-        let presenter = SigninPresenterImplemention()
+        let viewController      = SigninViewController()
+        let dataStore           = SigninDataStoreImplementation()
+        let repository          = SigninRepositoryImplementation(dataStore: dataStore)
+        let useCase             = SigninUseCaseImplementation(repository: repository)
+        let presenter           = SigninPresenterImplementation(useCase: useCase)
         
+        dataStore.inject(repository: repository)
         viewController.inject(presenter: presenter)
         
         return viewController

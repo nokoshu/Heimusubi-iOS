@@ -12,12 +12,14 @@ protocol SigninPresenter {
     func signinButtonPressed(email: String, plaintextPassword: String)
 }
 
-class SigninPresenterImplemention: SigninPresenter {
-    func signinButtonPressed(email: String, plaintextPassword: String) {
+class SigninPresenterImplementation: SigninPresenter {
+    fileprivate let useCase: SigninUseCase!
+    
+    init(useCase: SigninUseCase) {
+        self.useCase = useCase
     }
-}
-
-struct SigninParameters {
-    var email: String
-    var password: String
+    
+    func signinButtonPressed(email: String, plaintextPassword: String) {
+        self.useCase.signin(email: email, plainTextPassword: plaintextPassword)
+    }
 }
