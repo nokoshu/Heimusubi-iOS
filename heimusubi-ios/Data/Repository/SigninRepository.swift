@@ -10,6 +10,8 @@ import Foundation
 
 protocol SigninRepository: class {
     func signin(email: String, plainTextPassword: String) -> Void
+    
+    func dataStore(didSigninUser user: HeimusubiUserEntity)
 }
 
 final class SigninRepositoryImplementation: SigninRepository {
@@ -26,5 +28,10 @@ final class SigninRepositoryImplementation: SigninRepository {
     
     func signin(email: String, plainTextPassword: String) {
         self.dataStore.signin(email: email, plainTextPassword: plainTextPassword)
+    }
+    
+    func dataStore(didSigninUser user: HeimusubiUserEntity) {
+        print(user.user_name)
+        self.useCase.repository(didSigninUser: user)
     }
 }

@@ -124,6 +124,15 @@
                                 <userDefinedRuntimeAttribute type="color" keyPath="color">
                                     <color key="value" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                                    <color key="value" red="0.59999999999999998" green="0.56078431370000004" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="defaultBackgroudColor">
+                                    <color key="value" red="0.33333333329999998" green="0.27058823529999998" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="defaultBackgroundColor">
+                                    <color key="value" red="0.33333333329999998" green="0.27058823529999998" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="signinButtonPressed:" destination="-1" eventType="touchUpInside" id="uQz-WT-F8J"/>

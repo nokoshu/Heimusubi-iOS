@@ -10,6 +10,8 @@ import Foundation
 
 protocol SigninUseCase: class {
     func signin(email: String, plainTextPassword: String) -> Void
+    
+    func repository(didSigninUser user: HeimusubiUserEntity)
 }
 
 final class SigninUseCaseImplementation: SigninUseCase {
@@ -21,5 +23,10 @@ final class SigninUseCaseImplementation: SigninUseCase {
     
     func signin(email: String, plainTextPassword: String) {
         self.repository.signin(email: email, plainTextPassword: plainTextPassword)
+    }
+    
+    func repository(didSigninUser user: HeimusubiUserEntity) {
+        let userModel = HeimusubiUserTranslator.translate(entry: user)
+        print(userModel.userName)
     }
 }

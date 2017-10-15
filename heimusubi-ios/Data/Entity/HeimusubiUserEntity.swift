@@ -11,7 +11,7 @@ import Foundation
 import ObjectMapper
 
 struct HeimusubiUsersEntity: Mappable {
-    var items: [HeimusubiUserEntiry] = []
+    var items: [HeimusubiUserEntity] = []
     
     init?(map: Map) {}
     
@@ -20,11 +20,12 @@ struct HeimusubiUsersEntity: Mappable {
     }
 }
 
-struct HeimusubiUserEntiry: Mappable {
+struct HeimusubiUserEntity: Mappable {
     var id              = 0
     var user_name       = ""
     var email           = ""
     var password        = ""
+    var status           = 0
     var created         = 0
     var modified        = 0
     
@@ -35,6 +36,7 @@ struct HeimusubiUserEntiry: Mappable {
         self.user_name          <- map["user_name"]
         self.email              <- map["email"]
         self.password           <- map["password"]
+        self.status             <- map["status"]
         self.created            <- map["created"]
         self.modified           <- map["modified"]
     }

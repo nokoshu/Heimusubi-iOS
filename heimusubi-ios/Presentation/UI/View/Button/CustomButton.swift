@@ -13,6 +13,21 @@ class CustomButton: UIButton {
     
     // 文字色
     @IBInspectable var color: UIColor?
+    
+    // 背景色
+    @IBInspectable var defaultBackgroundColor: UIColor?
+    
+    // 選択された時の背景色
+    @IBInspectable var highlightedBackgroundColor: UIColor?
+    override var isHighlighted: Bool {
+        didSet {
+            if (isHighlighted) {
+                backgroundColor = highlightedBackgroundColor
+            } else {
+                backgroundColor = defaultBackgroundColor
+            }
+        }
+    }
 
     // 角丸
     @IBInspectable var cornerRadius: CGFloat = 0 {

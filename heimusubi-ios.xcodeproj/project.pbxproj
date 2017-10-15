@@ -20,6 +20,9 @@
 		233667141F8783F100E8044B /* heimusubi_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233667131F8783F100E8044B /* heimusubi_iosUITests.swift */; };
 		234B04AA1F8A54F40038E76D /* ViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */; };
 		234B04AC1F8A58F80038E76D /* SigninViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */; };
+		235AE7AF1F93101900C79D3B /* HeimusubiUsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235AE7AE1F93101900C79D3B /* HeimusubiUsersTranslator.swift */; };
+		235AE7B11F93139A00C79D3B /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235AE7B01F93139A00C79D3B /* Translator.swift */; };
+		235AE7B51F93172500C79D3B /* HeimusubiUsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235AE7B41F93172500C79D3B /* HeimusubiUsersModel.swift */; };
 		239FC2681F8C80B300BE1AE6 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2661F8C80B300BE1AE6 /* SigninViewController.swift */; };
 		239FC2691F8C80B300BE1AE6 /* SigninViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239FC2671F8C80B300BE1AE6 /* SigninViewController.xib */; };
 		239FC26E1F8C827300BE1AE6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC26D1F8C827300BE1AE6 /* CustomButton.swift */; };
@@ -27,7 +30,6 @@
 		239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */; };
 		239FC2751F8CB49C00BE1AE6 /* SigninPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */; };
 		23E8E8D31F90EE5E002C557B /* SigninDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E8E8D21F90EE5E002C557B /* SigninDataStore.swift */; };
-		23FDEDAE1F8E1B14005A4DF9 /* SigninModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FDEDAD1F8E1B14005A4DF9 /* SigninModel.swift */; };
 		64D9D72A80C4921FF6FBF242 /* Pods_heimusubi_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C39F365DA9D98A837A4F6D /* Pods_heimusubi_iosTests.framework */; };
 		8EC892BD104542C054C05D7E /* Pods_heimusubi_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E3E6EEC9478D93BD6D512A /* Pods_heimusubi_iosUITests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,9 @@
 		233667151F8783F100E8044B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuilder.swift; sourceTree = "<group>"; };
 		234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewControllerBuilder.swift; sourceTree = "<group>"; };
+		235AE7AE1F93101900C79D3B /* HeimusubiUsersTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeimusubiUsersTranslator.swift; sourceTree = "<group>"; };
+		235AE7B01F93139A00C79D3B /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		235AE7B41F93172500C79D3B /* HeimusubiUsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeimusubiUsersModel.swift; sourceTree = "<group>"; };
 		239FC2661F8C80B300BE1AE6 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		239FC2671F8C80B300BE1AE6 /* SigninViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninViewController.xib; sourceTree = "<group>"; };
 		239FC26D1F8C827300BE1AE6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -76,7 +81,6 @@
 		239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninPresenter.swift; sourceTree = "<group>"; };
 		23E8E8D21F90EE5E002C557B /* SigninDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninDataStore.swift; sourceTree = "<group>"; };
-		23FDEDAD1F8E1B14005A4DF9 /* SigninModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninModel.swift; sourceTree = "<group>"; };
 		32DCF064655524172822697B /* Pods_heimusubi_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D524FDFC33B4C7F0A37FF07 /* Pods-heimusubi-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-iosUITests/Pods-heimusubi-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		57E3E6EEC9478D93BD6D512A /* Pods_heimusubi_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,8 +219,8 @@
 		234B04A41F8A52510038E76D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				23E8E8D11F90EE4C002C557B /* DataStore */,
 				2313E94F1F90C2CE00E938BA /* Repository */,
+				23E8E8D11F90EE4C002C557B /* DataStore */,
 				2313E9491F90BD7700E938BA /* Entity */,
 				231416C31F906F73001C777D /* Network */,
 			);
@@ -227,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				2313E94C1F90C1EC00E938BA /* UseCase */,
+				235AE7AD1F930FDD00C79D3B /* Translator */,
 				23FDEDAA1F8E18A4005A4DF9 /* Model */,
 			);
 			path = Domain;
@@ -276,6 +281,15 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		235AE7AD1F930FDD00C79D3B /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				235AE7AE1F93101900C79D3B /* HeimusubiUsersTranslator.swift */,
+				235AE7B01F93139A00C79D3B /* Translator.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
 		239FC26A1F8C822A00BE1AE6 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,7 +334,7 @@
 		23FDEDAA1F8E18A4005A4DF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				23FDEDAD1F8E1B14005A4DF9 /* SigninModel.swift */,
+				235AE7B41F93172500C79D3B /* HeimusubiUsersModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -643,8 +657,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235AE7AF1F93101900C79D3B /* HeimusubiUsersTranslator.swift in Sources */,
 				239FC2751F8CB49C00BE1AE6 /* SigninPresenter.swift in Sources */,
 				239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */,
+				235AE7B11F93139A00C79D3B /* Translator.swift in Sources */,
 				239FC2681F8C80B300BE1AE6 /* SigninViewController.swift in Sources */,
 				2313E9511F90C2F600E938BA /* SigninRepository.swift in Sources */,
 				231416C51F906F98001C777D /* APIClient.swift in Sources */,
@@ -656,7 +672,7 @@
 				2313E94B1F90BD8D00E938BA /* HeimusubiUserEntity.swift in Sources */,
 				23E8E8D31F90EE5E002C557B /* SigninDataStore.swift in Sources */,
 				239FC26E1F8C827300BE1AE6 /* CustomButton.swift in Sources */,
-				23FDEDAE1F8E1B14005A4DF9 /* SigninModel.swift in Sources */,
+				235AE7B51F93172500C79D3B /* HeimusubiUsersModel.swift in Sources */,
 				239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
