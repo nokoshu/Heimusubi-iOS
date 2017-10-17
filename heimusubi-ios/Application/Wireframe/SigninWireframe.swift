@@ -21,4 +21,9 @@ struct SigninWireframe: WireFrame {
         let nextViewController = MainViewControllerBuilder.build()
         self.viewController?.present(nextViewController, animated: true, completion: nil)
     }
+    
+    func showSignup() {
+        let nextViewController = SignupViewControllerBuilder.build()
+        self.viewController?.present(nextViewController, animated: true, completion: nil)
+    }
 }
