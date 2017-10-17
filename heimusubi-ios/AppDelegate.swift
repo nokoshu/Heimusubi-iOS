@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  heimusubi-ios
 //
-//  Created by 竹之下遼 on 2017/10/06.
-//  Copyright © 2017年 竹之下遼. All rights reserved.
+//  Created by RyoBamboo on 2017/10/06.
+//  Copyright © 2017年 RyoBamboo. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Override
+        
+        let rootVC = SigninViewControllerBuilder.build()
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = rootVC
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
