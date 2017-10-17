@@ -13,9 +13,14 @@ protocol SignupPresenter {
 }
 
 class SignupPresenterImplementation: SignupPresenter {
+    fileprivate let useCase: SignupUseCase!
+    
+    init(useCase: SignupUseCase) {
+        self.useCase = useCase
+    }
     
     func signupButtonPressed(userName: String, email: String, password: String) {
-        
+        self.useCase.signup(useName: userName, email: email, password: password)
     }
     
 }

@@ -33,6 +33,23 @@ class SignupViewController: UIViewController, UITextFieldDelegate, UIScrollViewD
     }
     
     
+    func inject(presenter: SignupPresenter) {
+        self.presenter = presenter
+    }
+    
+    
+    /*-------------------------------------------------
+     * Action of UI Elements
+     *-----------------------------------------------*/
+    @IBAction func signupButtonPressed(_ sender: Any) {
+        if let userName = userNameTextField.text,
+            let email = emailTextField.text,
+            let plainTextPassword = passwordTextField.text {
+            self.presenter?.signupButtonPressed(userName: userName, email: email, password: plainTextPassword)
+        }
+    }
+    
+    
     /*-------------------------------------------------
      * Delegate Method of UITextField and UIScrollView
      *-----------------------------------------------*/

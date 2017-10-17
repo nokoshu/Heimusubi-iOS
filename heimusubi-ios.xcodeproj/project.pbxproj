@@ -38,6 +38,9 @@
 		23D5381F1F959CE40057433B /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D5381D1F959CE40057433B /* SignupViewController.xib */; };
 		23D538211F959FE90057433B /* SignupViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D538201F959FE90057433B /* SignupViewControllerBuilder.swift */; };
 		23D538231F95A28A0057433B /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D538221F95A28A0057433B /* SignupPresenter.swift */; };
+		23D538251F95AA610057433B /* SignupUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D538241F95AA610057433B /* SignupUseCase.swift */; };
+		23D538271F95ABB20057433B /* SignupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D538261F95ABB20057433B /* SignupRepository.swift */; };
+		23D538291F95AC510057433B /* SignupDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D538281F95AC510057433B /* SignupDataStore.swift */; };
 		23E8E8D31F90EE5E002C557B /* SigninDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E8E8D21F90EE5E002C557B /* SigninDataStore.swift */; };
 		64D9D72A80C4921FF6FBF242 /* Pods_heimusubi_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C39F365DA9D98A837A4F6D /* Pods_heimusubi_iosTests.framework */; };
 		8EC892BD104542C054C05D7E /* Pods_heimusubi_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E3E6EEC9478D93BD6D512A /* Pods_heimusubi_iosUITests.framework */; };
@@ -98,6 +101,9 @@
 		23D5381D1F959CE40057433B /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		23D538201F959FE90057433B /* SignupViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewControllerBuilder.swift; sourceTree = "<group>"; };
 		23D538221F95A28A0057433B /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
+		23D538241F95AA610057433B /* SignupUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUseCase.swift; sourceTree = "<group>"; };
+		23D538261F95ABB20057433B /* SignupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRepository.swift; sourceTree = "<group>"; };
+		23D538281F95AC510057433B /* SignupDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDataStore.swift; sourceTree = "<group>"; };
 		23E8E8D21F90EE5E002C557B /* SigninDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninDataStore.swift; sourceTree = "<group>"; };
 		32DCF064655524172822697B /* Pods_heimusubi_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D524FDFC33B4C7F0A37FF07 /* Pods-heimusubi-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-iosUITests/Pods-heimusubi-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				2313E94D1F90C20700E938BA /* SigninUseCase.swift */,
+				23D538241F95AA610057433B /* SignupUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -166,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				2313E9501F90C2F600E938BA /* SigninRepository.swift */,
+				23D538261F95ABB20057433B /* SignupRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -362,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				23E8E8D21F90EE5E002C557B /* SigninDataStore.swift */,
+				23D538281F95AC510057433B /* SignupDataStore.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -709,11 +718,14 @@
 				233666F41F8783F100E8044B /* AppDelegate.swift in Sources */,
 				231416C71F907221001C777D /* HeimusubiAPIClient.swift in Sources */,
 				2313E94B1F90BD8D00E938BA /* HeimusubiUserEntity.swift in Sources */,
+				23D538251F95AA610057433B /* SignupUseCase.swift in Sources */,
 				2309D4E91F94DC3B00C53DFE /* MainViewControllerBuilder.swift in Sources */,
 				2309D4E31F94DB2A00C53DFE /* SigninWireframe.swift in Sources */,
 				23E8E8D31F90EE5E002C557B /* SigninDataStore.swift in Sources */,
 				2309D4E11F94DABA00C53DFE /* Wireframe.swift in Sources */,
+				23D538291F95AC510057433B /* SignupDataStore.swift in Sources */,
 				239FC26E1F8C827300BE1AE6 /* CustomButton.swift in Sources */,
+				23D538271F95ABB20057433B /* SignupRepository.swift in Sources */,
 				235AE7B51F93172500C79D3B /* HeimusubiUsersModel.swift in Sources */,
 				239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */,
 				23D538231F95A28A0057433B /* SignupPresenter.swift in Sources */,

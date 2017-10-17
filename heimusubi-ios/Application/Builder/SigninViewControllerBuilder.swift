@@ -19,7 +19,6 @@ struct SigninViewControllerBuilder: ViewControllerBuilder {
         let useCase             = SigninUseCaseImplementation(repository: repository)
         let presenter           = SigninPresenterImplementation(useCase: useCase, wireframe: wireframe)
         
-        
         dataStore.inject(repository: repository)
         repository.inject(useCase: useCase)
         useCase.inject(presenter: presenter)
