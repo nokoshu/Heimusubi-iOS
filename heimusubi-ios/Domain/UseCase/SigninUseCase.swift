@@ -15,10 +15,15 @@ protocol SigninUseCase: class {
 }
 
 final class SigninUseCaseImplementation: SigninUseCase {
-    fileprivate var repository: SigninRepository!
+    fileprivate let repository: SigninRepository!
+    fileprivate var presenter: SigninPresenter!
     
     init(repository: SigninRepository) {
         self.repository = repository
+    }
+    
+    func inject(presenter: SigninPresenter) {
+        self.presenter = presenter
     }
     
     func signin(email: String, plainTextPassword: String) {
@@ -26,7 +31,8 @@ final class SigninUseCaseImplementation: SigninUseCase {
     }
     
     func repository(didSigninUser user: HeimusubiUserEntity) {
+        UserDefaults.standard.set(true, forKey: "isSignin")
         let userModel = HeimusubiUserTranslator.translate(entry: user)
-        print(userModel.userName)
+        self.presenter.useCase(didSigninUser: userModel)
     }
 }

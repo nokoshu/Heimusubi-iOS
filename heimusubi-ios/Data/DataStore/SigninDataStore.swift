@@ -25,7 +25,6 @@ final class SigninDataStoreImplementation: SigninDataStore {
         HeimusubiAPIClient.signin(email: email, plainTextPassword: plainTextPassword)  { response in
             switch response {
             case .success(let value):
-                print(value.email)
                 self.repository.dataStore(didSigninUser: value)
                 
             case .error(let error):

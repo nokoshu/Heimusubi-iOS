@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1C11771FA51CB0CB2EAEF85A /* Pods_heimusubi_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DCF064655524172822697B /* Pods_heimusubi_ios.framework */; };
+		2309D4E11F94DABA00C53DFE /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309D4E01F94DABA00C53DFE /* Wireframe.swift */; };
+		2309D4E31F94DB2A00C53DFE /* SigninWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309D4E21F94DB2A00C53DFE /* SigninWireframe.swift */; };
+		2309D4E61F94DBFF00C53DFE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309D4E41F94DBFF00C53DFE /* MainViewController.swift */; };
+		2309D4E71F94DBFF00C53DFE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2309D4E51F94DBFF00C53DFE /* MainViewController.xib */; };
+		2309D4E91F94DC3B00C53DFE /* MainViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309D4E81F94DC3B00C53DFE /* MainViewControllerBuilder.swift */; };
 		2313E94B1F90BD8D00E938BA /* HeimusubiUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313E94A1F90BD8D00E938BA /* HeimusubiUserEntity.swift */; };
 		2313E94E1F90C20700E938BA /* SigninUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313E94D1F90C20700E938BA /* SigninUseCase.swift */; };
 		2313E9511F90C2F600E938BA /* SigninRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313E9501F90C2F600E938BA /* SigninRepository.swift */; };
@@ -53,6 +58,11 @@
 
 /* Begin PBXFileReference section */
 		13C39F365DA9D98A837A4F6D /* Pods_heimusubi_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2309D4E01F94DABA00C53DFE /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		2309D4E21F94DB2A00C53DFE /* SigninWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWireframe.swift; sourceTree = "<group>"; };
+		2309D4E41F94DBFF00C53DFE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2309D4E51F94DBFF00C53DFE /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2309D4E81F94DC3B00C53DFE /* MainViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerBuilder.swift; sourceTree = "<group>"; };
 		2313E94A1F90BD8D00E938BA /* HeimusubiUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeimusubiUserEntity.swift; sourceTree = "<group>"; };
 		2313E94D1F90C20700E938BA /* SigninUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninUseCase.swift; sourceTree = "<group>"; };
 		2313E9501F90C2F600E938BA /* SigninRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRepository.swift; sourceTree = "<group>"; };
@@ -119,6 +129,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2309D4DF1F94DA9600C53DFE /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				2309D4E01F94DABA00C53DFE /* Wireframe.swift */,
+				2309D4E21F94DB2A00C53DFE /* SigninWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
 		2313E9491F90BD7700E938BA /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +229,7 @@
 		234B04A31F8A52400038E76D /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2309D4DF1F94DA9600C53DFE /* Wireframe */,
 				239FC26F1F8C8AC600BE1AE6 /* Const */,
 				234B04A81F8A54D00038E76D /* Builder */,
 			);
@@ -251,6 +271,7 @@
 			children = (
 				234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */,
 				234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */,
+				2309D4E81F94DC3B00C53DFE /* MainViewControllerBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -277,6 +298,8 @@
 			children = (
 				239FC2661F8C80B300BE1AE6 /* SigninViewController.swift */,
 				239FC2671F8C80B300BE1AE6 /* SigninViewController.xib */,
+				2309D4E41F94DBFF00C53DFE /* MainViewController.swift */,
+				2309D4E51F94DBFF00C53DFE /* MainViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -481,6 +504,7 @@
 				239FC2691F8C80B300BE1AE6 /* SigninViewController.xib in Resources */,
 				233666FE1F8783F100E8044B /* LaunchScreen.storyboard in Resources */,
 				233666FB1F8783F100E8044B /* Assets.xcassets in Resources */,
+				2309D4E71F94DBFF00C53DFE /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,10 +694,14 @@
 				233666F41F8783F100E8044B /* AppDelegate.swift in Sources */,
 				231416C71F907221001C777D /* HeimusubiAPIClient.swift in Sources */,
 				2313E94B1F90BD8D00E938BA /* HeimusubiUserEntity.swift in Sources */,
+				2309D4E91F94DC3B00C53DFE /* MainViewControllerBuilder.swift in Sources */,
+				2309D4E31F94DB2A00C53DFE /* SigninWireframe.swift in Sources */,
 				23E8E8D31F90EE5E002C557B /* SigninDataStore.swift in Sources */,
+				2309D4E11F94DABA00C53DFE /* Wireframe.swift in Sources */,
 				239FC26E1F8C827300BE1AE6 /* CustomButton.swift in Sources */,
 				235AE7B51F93172500C79D3B /* HeimusubiUsersModel.swift in Sources */,
 				239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */,
+				2309D4E61F94DBFF00C53DFE /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,7 +31,6 @@ final class SigninRepositoryImplementation: SigninRepository {
     }
     
     func dataStore(didSigninUser user: HeimusubiUserEntity) {
-        print(user.user_name)
         self.useCase.repository(didSigninUser: user)
     }
 }

@@ -59,7 +59,7 @@ final class HeimusubiAPIClient: APIClient {
 
 extension HeimusubiAPIClient {
     typealias SigninCompletionHandler = (Result<HeimusubiUserEntity>) -> Void
-    
+
     class func signin(email: String,
                       plainTextPassword: String,
                       completionHandler: SigninCompletionHandler? = nil) {
