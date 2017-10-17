@@ -11,7 +11,6 @@ import UIKit
 class SigninViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
     
     fileprivate var presenter: SigninPresenter!
-    
     fileprivate var activeTextField: CustomTextField?
 
     @IBOutlet weak var backgroundScrollView: UIScrollView!

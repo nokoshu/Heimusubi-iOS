@@ -8,17 +8,49 @@
 
 import UIKit
 
-class SignupViewController: UIViewController {
+class SignupViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
+    
+    fileprivate var presenter: SignupPresenter?
+    fileprivate var activeTextField: CustomTextField?
 
+    @IBOutlet weak var backgroundScrollView: UIScrollView!
+    @IBOutlet weak var userNameTextField: CustomTextField!
+    @IBOutlet weak var emailTextField: CustomTextField!
+    @IBOutlet weak var passwordTextField: CustomTextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        backgroundScrollView.delegate = self
+        userNameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    /*-------------------------------------------------
+     * Delegate Method of UITextField and UIScrollView
+     *-----------------------------------------------*/
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        activeTextField = textField as? CustomTextField
+        backgroundScrollView.setContentOffset(CGPoint(x: 0.0, y: 150.0), animated: true)
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        backgroundScrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        backgroundScrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+        view.endEditing(true)
     }
     
 
