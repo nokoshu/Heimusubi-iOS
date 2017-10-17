@@ -20,6 +20,6 @@ class SignupUseCaseImplementation: SignupUseCase {
     }
     
     func signup(useName: String, email: String, password: String) {
-        print("ok")
+        self.repository.signup(userName: useName, email: email, password: password)
     }
 }

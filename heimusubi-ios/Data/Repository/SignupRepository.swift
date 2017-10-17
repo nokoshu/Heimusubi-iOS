@@ -13,8 +13,13 @@ protocol SignupRepository {
 }
 
 class SignupRepositoryImplementation: SignupRepository {
+    fileprivate let dataStore: SignupDataStore!
+    
+    init(dataStore: SignupDataStore) {
+        self.dataStore = dataStore
+    }
     
     func signup(userName: String, email: String, password: String) {
-        
+        self.dataStore.signup(userName: userName, email: email, plainTextPassword: password)
     }
 }

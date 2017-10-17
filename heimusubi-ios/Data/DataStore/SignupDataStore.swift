@@ -9,11 +9,18 @@
 import Foundation
 
 protocol SignupDataStore {
-    func signin(userName: String, email: String, password: String)
+    func signup(userName: String, email: String, plainTextPassword: String)
 }
 
 class SignupDataStoreImplementation: SignupDataStore {
-    func signin(userName: String, email: String, password: String) {
-        
+    func signup(userName: String, email: String, plainTextPassword: String) {
+        HeimusubiAPIClient.signup(userName: userName, email: email, plainTextPassword: plainTextPassword) { response in
+            switch response {
+            case .success(let value):
+                print("registered!!!!")
+            case .error(let error):
+                print(error)
+            }
+        }
     }
 }
