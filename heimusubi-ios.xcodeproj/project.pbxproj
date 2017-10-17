@@ -34,6 +34,9 @@
 		239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2701F8C8ADC00BE1AE6 /* Const.swift */; };
 		239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */; };
 		239FC2751F8CB49C00BE1AE6 /* SigninPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */; };
+		23D5381E1F959CE40057433B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5381C1F959CE40057433B /* SignupViewController.swift */; };
+		23D5381F1F959CE40057433B /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D5381D1F959CE40057433B /* SignupViewController.xib */; };
+		23D538211F959FE90057433B /* SignupViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D538201F959FE90057433B /* SignupViewControllerBuilder.swift */; };
 		23E8E8D31F90EE5E002C557B /* SigninDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E8E8D21F90EE5E002C557B /* SigninDataStore.swift */; };
 		64D9D72A80C4921FF6FBF242 /* Pods_heimusubi_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C39F365DA9D98A837A4F6D /* Pods_heimusubi_iosTests.framework */; };
 		8EC892BD104542C054C05D7E /* Pods_heimusubi_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E3E6EEC9478D93BD6D512A /* Pods_heimusubi_iosUITests.framework */; };
@@ -90,6 +93,9 @@
 		239FC2701F8C8ADC00BE1AE6 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninPresenter.swift; sourceTree = "<group>"; };
+		23D5381C1F959CE40057433B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		23D5381D1F959CE40057433B /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		23D538201F959FE90057433B /* SignupViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewControllerBuilder.swift; sourceTree = "<group>"; };
 		23E8E8D21F90EE5E002C557B /* SigninDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninDataStore.swift; sourceTree = "<group>"; };
 		32DCF064655524172822697B /* Pods_heimusubi_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D524FDFC33B4C7F0A37FF07 /* Pods-heimusubi-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-iosUITests/Pods-heimusubi-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -271,6 +277,7 @@
 			children = (
 				234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */,
 				234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */,
+				23D538201F959FE90057433B /* SignupViewControllerBuilder.swift */,
 				2309D4E81F94DC3B00C53DFE /* MainViewControllerBuilder.swift */,
 			);
 			path = Builder;
@@ -296,10 +303,12 @@
 		234B04AF1F8A5B9A0038E76D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				239FC2661F8C80B300BE1AE6 /* SigninViewController.swift */,
-				239FC2671F8C80B300BE1AE6 /* SigninViewController.xib */,
 				2309D4E41F94DBFF00C53DFE /* MainViewController.swift */,
 				2309D4E51F94DBFF00C53DFE /* MainViewController.xib */,
+				239FC2661F8C80B300BE1AE6 /* SigninViewController.swift */,
+				239FC2671F8C80B300BE1AE6 /* SigninViewController.xib */,
+				23D5381C1F959CE40057433B /* SignupViewController.swift */,
+				23D5381D1F959CE40057433B /* SignupViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -502,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				239FC2691F8C80B300BE1AE6 /* SigninViewController.xib in Resources */,
+				23D5381F1F959CE40057433B /* SignupViewController.xib in Resources */,
 				233666FE1F8783F100E8044B /* LaunchScreen.storyboard in Resources */,
 				233666FB1F8783F100E8044B /* Assets.xcassets in Resources */,
 				2309D4E71F94DBFF00C53DFE /* MainViewController.xib in Resources */,
@@ -683,9 +693,11 @@
 			files = (
 				235AE7AF1F93101900C79D3B /* HeimusubiUsersTranslator.swift in Sources */,
 				239FC2751F8CB49C00BE1AE6 /* SigninPresenter.swift in Sources */,
+				23D5381E1F959CE40057433B /* SignupViewController.swift in Sources */,
 				239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */,
 				235AE7B11F93139A00C79D3B /* Translator.swift in Sources */,
 				239FC2681F8C80B300BE1AE6 /* SigninViewController.swift in Sources */,
+				23D538211F959FE90057433B /* SignupViewControllerBuilder.swift in Sources */,
 				2313E9511F90C2F600E938BA /* SigninRepository.swift in Sources */,
 				231416C51F906F98001C777D /* APIClient.swift in Sources */,
 				2313E94E1F90C20700E938BA /* SigninUseCase.swift in Sources */,

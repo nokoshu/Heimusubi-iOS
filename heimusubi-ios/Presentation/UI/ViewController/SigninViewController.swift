@@ -45,6 +45,10 @@ class SigninViewController: UIViewController, UITextFieldDelegate, UIScrollViewD
         }
     }
     
+    @IBAction func signupButtonPressed(_ sender: Any) {
+        self.presenter.signupButtonPressed()
+    }
+    
     
     /*-------------------------------------------------
      * Delegate Method of UITextField and UIScrollView

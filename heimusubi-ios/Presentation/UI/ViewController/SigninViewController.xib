@@ -32,6 +32,10 @@
                     <rect key="frame" x="-1" y="0.0" width="376" height="667"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signin_background" translatesAutoresizingMaskIntoConstraints="NO" id="5zw-0i-HgD">
+                            <rect key="frame" x="0.0" y="0.0" width="376" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5o-6A-ODN" customClass="CustomButton" customModule="heimusubi_ios" customModuleProvider="target">
                             <rect key="frame" x="196" y="495" width="121" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -58,6 +62,9 @@
                                     <color key="value" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="signupButtonPressed:" destination="-1" eventType="touchUpInside" id="mbL-ii-1ZL"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ログインできない場合はこちらから" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pay-hY-I6H">
                             <rect key="frame" x="59" y="569" width="258" height="21"/>
@@ -66,10 +73,6 @@
                             <color key="textColor" red="0.59999999999999998" green="0.5607843137254902" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signin_background" translatesAutoresizingMaskIntoConstraints="NO" id="5zw-0i-HgD">
-                            <rect key="frame" x="0.0" y="0.0" width="376" height="667"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="メールアドレス" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="rL1-4O-47L" customClass="CustomTextField" customModule="heimusubi_ios" customModuleProvider="target">
                             <rect key="frame" x="59" y="398" width="258" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -82,7 +85,7 @@
                                     <real key="value" value="0.0"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="string" keyPath="textaa" value="icon_mail"/>
-                                <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="icon_mail"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="icon_email"/>
                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                     <color key="value" red="0.78928581750000004" green="0.3010525173611111" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </userDefinedRuntimeAttribute>
