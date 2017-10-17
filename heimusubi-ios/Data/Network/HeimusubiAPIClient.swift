@@ -32,8 +32,13 @@ final class HeimusubiAPIClient: APIClient {
                 var path = Auth.path
                 
                 switch self {
+                // Signin
                 case .Signin:
                     path.append("/signin")
+                
+                // Signup
+                case .Signup:
+                    path.append("/signup")
                 }
                 
                 return path
@@ -43,7 +48,14 @@ final class HeimusubiAPIClient: APIClient {
                 var params: Parameters = [:]
                 
                 switch self {
+                // Signin
                 case let .Signin(email, plainTextPassword):
+                    params["email"] = email
+                    params["plain_text_password"] = plainTextPassword
+                    
+                // Signup
+                case let .Signup(userName, email, plainTextPassword):
+                    params["user_name"] = userName
                     params["email"] = email
                     params["plain_text_password"] = plainTextPassword
                 }
@@ -52,6 +64,7 @@ final class HeimusubiAPIClient: APIClient {
             }
             
             case Signin(email: String, plainTextPassword: String)
+            case Signup(userName: String, email: String, plainTextPassword: String)
         }
     }
 }
@@ -59,11 +72,23 @@ final class HeimusubiAPIClient: APIClient {
 
 extension HeimusubiAPIClient {
     typealias SigninCompletionHandler = (Result<HeimusubiUserEntity>) -> Void
+    typealias SignupCompletionHandler = (Result<HeimusubiUserEntity>) -> Void
 
     class func signin(email: String,
                       plainTextPassword: String,
                       completionHandler: SigninCompletionHandler? = nil) {
         let router = HeimusubiAPIClient.Router.Auth.Signin(email: email, plainTextPassword: plainTextPassword)
+        let urlString = router.urlString
+        let parameters = router.parameters
+        
+        HeimusubiAPIClient.request(url: urlString, method: .post, parameters: parameters, completionHandler: completionHandler)
+    }
+    
+    class func signup(userName: String,
+                      email: String,
+                      plainTextPassword: String,
+                      completionHandler: SignupCompletionHandler? = nil) {
+        let router = HeimusubiAPIClient.Router.Auth.Signup(userName: userName, email: email, plainTextPassword: plainTextPassword)
         let urlString = router.urlString
         let parameters = router.parameters
         

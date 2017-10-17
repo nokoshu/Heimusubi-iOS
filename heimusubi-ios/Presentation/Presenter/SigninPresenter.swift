@@ -10,6 +10,7 @@ import Foundation
 
 protocol SigninPresenter {
     func signinButtonPressed(email: String, plaintextPassword: String)
+    func signupButtonPressed()
     func useCase(didSigninUser user: HeimusubiUserModel)
 }
 
@@ -24,6 +25,10 @@ class SigninPresenterImplementation: SigninPresenter {
     
     func signinButtonPressed(email: String, plaintextPassword: String) {
         self.useCase.signin(email: email, plainTextPassword: plaintextPassword)
+    }
+    
+    func signupButtonPressed() {
+        self.wireframe.showSignup()
     }
     
     func useCase(didSigninUser user: HeimusubiUserModel) {
