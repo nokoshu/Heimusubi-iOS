@@ -10,17 +10,24 @@ import Foundation
 
 protocol SignupPresenter {
     func signupButtonPressed(userName: String, email: String, password: String)
+    func backToSigninButtonPressed()
 }
 
 class SignupPresenterImplementation: SignupPresenter {
     fileprivate let useCase: SignupUseCase!
+    fileprivate let wireframe: SignupWireframe!
     
-    init(useCase: SignupUseCase) {
+    init(useCase: SignupUseCase, wireframe: SignupWireframe) {
         self.useCase = useCase
+        self.wireframe = wireframe
     }
     
     func signupButtonPressed(userName: String, email: String, password: String) {
         self.useCase.signup(useName: userName, email: email, password: password)
+    }
+    
+    func backToSigninButtonPressed() {
+        self.wireframe.backToSignin()
     }
     
 }

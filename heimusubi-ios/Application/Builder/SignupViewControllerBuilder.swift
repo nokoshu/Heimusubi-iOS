@@ -13,10 +13,11 @@ struct SignupViewControllerBuilder: ViewControllerBuilder {
     
     static func build() -> ViewController {
         let viewController      = SignupViewController()
+        let wireframe           = SignupWireframe(viewController: viewController)
         let dataStore           = SignupDataStoreImplementation()
         let repository          = SignupRepositoryImplementation(dataStore: dataStore)
         let useCase             = SignupUseCaseImplementation(repository: repository)
-        let presenter           = SignupPresenterImplementation(useCase: useCase)
+        let presenter           = SignupPresenterImplementation(useCase: useCase, wireframe: wireframe)
         
         viewController.inject(presenter: presenter)
         
