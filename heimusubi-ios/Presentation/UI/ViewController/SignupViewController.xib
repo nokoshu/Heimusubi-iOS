@@ -31,7 +31,7 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rto-Cc-pH3">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signup_background" translatesAutoresizingMaskIntoConstraints="NO" id="vPB-eQ-dyJ">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_signup" translatesAutoresizingMaskIntoConstraints="NO" id="vPB-eQ-dyJ">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -136,6 +136,6 @@
         </view>
     </objects>
     <resources>
-        <image name="signup_background" width="375" height="677"/>
+        <image name="background_signup" width="875" height="1580"/>
     </resources>
 </document>
