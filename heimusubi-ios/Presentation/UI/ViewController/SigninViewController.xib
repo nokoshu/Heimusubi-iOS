@@ -32,7 +32,7 @@
                     <rect key="frame" x="-1" y="0.0" width="376" height="667"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signin_background" translatesAutoresizingMaskIntoConstraints="NO" id="5zw-0i-HgD">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_signin" translatesAutoresizingMaskIntoConstraints="NO" id="5zw-0i-HgD">
                             <rect key="frame" x="0.0" y="0.0" width="376" height="667"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -150,6 +150,6 @@
         </view>
     </objects>
     <resources>
-        <image name="signin_background" width="781" height="1390"/>
+        <image name="background_signin" width="781" height="1390"/>
     </resources>
 </document>
