@@ -10,7 +10,7 @@ import UIKit
 
 class SignupViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
     
-    fileprivate var presenter: SignupPresenter?
+    fileprivate var presenter: SignupPresenter!
     fileprivate var activeTextField: CustomTextField?
 
     @IBOutlet weak var backgroundScrollView: UIScrollView!
@@ -45,8 +45,12 @@ class SignupViewController: UIViewController, UITextFieldDelegate, UIScrollViewD
         if let userName = userNameTextField.text,
             let email = emailTextField.text,
             let plainTextPassword = passwordTextField.text {
-            self.presenter?.signupButtonPressed(userName: userName, email: email, password: plainTextPassword)
+            self.presenter.signupButtonPressed(userName: userName, email: email, password: plainTextPassword)
         }
+    }
+    
+    @IBAction func backToSigninButtonPressed(_ sender: Any) {
+        self.presenter.backToSigninButtonPressed()
     }
     
     
