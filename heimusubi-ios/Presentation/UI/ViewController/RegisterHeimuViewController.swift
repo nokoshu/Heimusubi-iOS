@@ -14,20 +14,21 @@ class RegisterHeimuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func inject(presenter: RegisterHeimuPresenter) {
         self.presenter = presenter
     }
     
-
+    // Seach accessable heimu around this iPhone
+    @IBAction func seachHeimuButtonPressed(_ sender: Any) {
+        self.presenter.searchHeimuButtonPressed()
+    }
+    
     /*
     // MARK: - Navigation
 
