@@ -20,7 +20,7 @@ class RegisterHeimuPresenterImplementation: RegisterHeimuPresenter {
     }
     
     func searchHeimuButtonPressed() {
-        print("pressed!")
+        self.useCase.seachNearByHeimu()
     }
     
 }
