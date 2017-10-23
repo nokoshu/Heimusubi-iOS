@@ -11,13 +11,18 @@ import Foundation
 struct SignupWireframe: WireFrame {
     typealias ViewController = SignupViewController
     
-    fileprivate weak var viewController: SignupViewController?
+    fileprivate let viewController: SignupViewController!
     
     init(viewController: ViewController) {
         self.viewController = viewController
     }
     
+    func showRegisterHeimu() {
+        let nextViewController = RegisterHeimuViewControllerBuilder.build()
+        self.viewController.present(nextViewController, animated: true, completion: nil)
+    }
+    
     func backToSignin() {
-        self.viewController?.dismiss(animated: true, completion: nil)
+        self.viewController.dismiss(animated: true, completion: nil)
     }
 }
