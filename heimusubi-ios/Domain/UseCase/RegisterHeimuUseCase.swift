@@ -10,7 +10,9 @@ import Foundation
 import CoreBluetooth
 
 protocol RegisterHeimuUseCase {
-    func seachNearByHeimu() -> Array<CBPeripheral>
+    func starScanPeripheral()
+    func stopScanPeripheral()
+    func getScannedPeripherals() -> Array<CBPeripheral>
 }
 
 class RegisterHeimuUseCaseImplementation: NSObject, RegisterHeimuUseCase, CBCentralManagerDelegate {
@@ -23,10 +25,15 @@ class RegisterHeimuUseCaseImplementation: NSObject, RegisterHeimuUseCase, CBCent
         self.centralManager = CBCentralManager(delegate: self, queue: nil)
     }
     
-    
-    func seachNearByHeimu() -> Array<CBPeripheral> {
+    func starScanPeripheral() {
         self.centralManager.scanForPeripherals(withServices: nil, options: nil)
-        
+    }
+
+    func stopScanPeripheral() {
+        self.centralManager.stopScan()
+    }
+    
+    func getScannedPeripherals() -> Array<CBPeripheral> {
         return self.scannedPeripherals
     }
     
@@ -38,8 +45,9 @@ class RegisterHeimuUseCaseImplementation: NSObject, RegisterHeimuUseCase, CBCent
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        print("peripheral: \(peripheral)")
-        self.scannedPeripherals.append(peripheral)
+        if self.scannedPeripherals.contains(peripheral) == false {
+            self.scannedPeripherals.append(peripheral)
+        }
     }
     
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
