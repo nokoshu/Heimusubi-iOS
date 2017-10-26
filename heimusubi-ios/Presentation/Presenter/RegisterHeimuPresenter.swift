@@ -10,12 +10,15 @@ import Foundation
 
 protocol RegisterHeimuPresenter {
     func searchHeimuButtonPressed()
+    func heimuSignImageViewPressed()
 }
 
 class RegisterHeimuPresenterImplementation: RegisterHeimuPresenter {
-    fileprivate var useCase: RegisterHeimuUseCase
+    fileprivate var useCase: RegisterHeimuUseCase!
+    fileprivate let wireframe: RegisterHeimuWireframe!
     
-    init(useCase: RegisterHeimuUseCase) {
+    init(wireframe: RegisterHeimuWireframe, useCase: RegisterHeimuUseCase) {
+        self.wireframe = wireframe
         self.useCase = useCase
     }
     
@@ -37,6 +40,10 @@ class RegisterHeimuPresenterImplementation: RegisterHeimuPresenter {
                 print("デバイスのUUID: \(element.identifier)")
             }
         }
+    }
+    
+    func heimuSignImageViewPressed() {
+        self.wireframe.showBootHeimuView()
     }
     
 }

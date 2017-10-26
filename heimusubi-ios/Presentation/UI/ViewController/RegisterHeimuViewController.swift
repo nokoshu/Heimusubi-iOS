@@ -12,8 +12,13 @@ class RegisterHeimuViewController: UIViewController {
 
     fileprivate var presenter: RegisterHeimuPresenter!
     
+    @IBOutlet weak var heimuSignImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.heimuSignImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.heimuSignImageViewTapped(_:))))
+        self.heimuSignImageView.isUserInteractionEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +33,13 @@ class RegisterHeimuViewController: UIViewController {
     @IBAction func seachHeimuButtonPressed(_ sender: Any) {
         self.presenter.searchHeimuButtonPressed()
     }
+    
+    @objc func heimuSignImageViewTapped(_ sender: UITapGestureRecognizer) {
+        self.presenter.heimuSignImageViewPressed()
+    }
+
+    
+    
     
     /*
     // MARK: - Navigation

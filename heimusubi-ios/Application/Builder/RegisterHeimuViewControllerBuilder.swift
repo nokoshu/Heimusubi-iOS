@@ -14,7 +14,8 @@ struct RegisterHeimuViewControllerBuilder: ViewControllerBuilder {
     static func build() -> ViewController {
         let viewController      = ViewController()
         let useCase             = RegisterHeimuUseCaseImplementation()
-        let presenter           = RegisterHeimuPresenterImplementation(useCase: useCase)
+        let wireframe           = RegisterHeimuWireframe(viewController: viewController)
+        let presenter           = RegisterHeimuPresenterImplementation(wireframe: wireframe, useCase: useCase)
         
         viewController.inject(presenter: presenter)
         
