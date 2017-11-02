@@ -13,7 +13,13 @@ struct ConnectHeimuViewControllerBuilder: ViewControllerBuilder {
     
     static func build() -> ViewController {
         let viewController      = ViewController()
+        let dataStore           = ConnectHeimuDataStoreImplementation()
+        let repository          = ConnectHeimuRepositoryImplementation(dataStore: dataStore)
+        let useCase             = ConnectHeimuUseCaseImplementation(repository: repository)
+        let wireframe           = ConnectHeimuWireframe(viewController: viewController)
+        let presenter           = ConnectHeimuPresenterImplementation(wireframe: wireframe, useCase: useCase)
         
+        viewController.inject(presenter: presenter)
 
         return viewController
     }

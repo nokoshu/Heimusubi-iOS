@@ -9,6 +9,7 @@
 import UIKit
 
 class ConnectHeimuViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
+    fileprivate var presenter: ConnectHeimuPresenter!
     fileprivate var activeTextField: CustomTextField?
 
     @IBOutlet weak var backgroundScrollView: UIScrollView!
@@ -28,6 +29,39 @@ class ConnectHeimuViewController: UIViewController, UITextFieldDelegate, UIScrol
         // Dispose of any resources that can be recreated.
     }
     
+    func inject(presenter: ConnectHeimuPresenter) {
+        self.presenter = presenter
+    }
+    
+    
+    /*-------------------------------------------------
+     * Action of UI Elements
+     *-----------------------------------------------*/
+    @IBAction func registerButtonPressed(_ sender: Any) {
+        if let heimuName = self.heimuNameTextField.text, let address = self.addressTextField.text {
+            self.presenter.registerButtonPressed(heimuName: heimuName, address: address)
+        }
+    }
+    
+    /*-------------------------------------------------
+     * Delegate Method of UITextField and UIScrollView
+     *-----------------------------------------------*/
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        activeTextField = textField as? CustomTextField
+        backgroundScrollView.setContentOffset(CGPoint(x: 0.0, y: 160.0), animated: true)
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        backgroundScrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        backgroundScrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+        view.endEditing(true)
+    }
 
     /*
     // MARK: - Navigation
