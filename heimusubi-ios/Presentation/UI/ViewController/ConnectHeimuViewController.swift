@@ -8,12 +8,19 @@
 
 import UIKit
 
-class ConnectHeimuViewController: UIViewController {
+class ConnectHeimuViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
+    fileprivate var activeTextField: CustomTextField?
 
+    @IBOutlet weak var backgroundScrollView: UIScrollView!
+    @IBOutlet weak var heimuNameTextField: CustomTextField!
+    @IBOutlet weak var addressTextField: CustomTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.backgroundScrollView.delegate = self
+        self.heimuNameTextField.delegate = self
+        self.addressTextField.delegate   = self
     }
 
     override func didReceiveMemoryWarning() {
