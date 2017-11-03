@@ -28,6 +28,7 @@
 		233A4A981FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A4A971FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift */; };
 		233A4A9A1FAB26600020C0D0 /* ConnectHeimuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A4A991FAB26600020C0D0 /* ConnectHeimuRepository.swift */; };
 		233A4A9C1FAB26940020C0D0 /* ConnectHeimuDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A4A9B1FAB26940020C0D0 /* ConnectHeimuDataStore.swift */; };
+		234A86EE1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234A86ED1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift */; };
 		234B04AA1F8A54F40038E76D /* ViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */; };
 		234B04AC1F8A58F80038E76D /* SigninViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */; };
 		235AE7AF1F93101900C79D3B /* HeimusubiUsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235AE7AE1F93101900C79D3B /* HeimusubiUsersTranslator.swift */; };
@@ -111,6 +112,7 @@
 		233A4A971FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuUseCase.swift; sourceTree = "<group>"; };
 		233A4A991FAB26600020C0D0 /* ConnectHeimuRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuRepository.swift; sourceTree = "<group>"; };
 		233A4A9B1FAB26940020C0D0 /* ConnectHeimuDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuDataStore.swift; sourceTree = "<group>"; };
+		234A86ED1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeimusubiHeimuEntity.swift; sourceTree = "<group>"; };
 		234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuilder.swift; sourceTree = "<group>"; };
 		234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewControllerBuilder.swift; sourceTree = "<group>"; };
 		235AE7AE1F93101900C79D3B /* HeimusubiUsersTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeimusubiUsersTranslator.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				2313E94A1F90BD8D00E938BA /* HeimusubiUserEntity.swift */,
+				234A86ED1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -796,6 +799,7 @@
 				23E8E8D31F90EE5E002C557B /* SigninDataStore.swift in Sources */,
 				23EC099D1FA1DAAE00AF1F6F /* BootHeimuViewController.swift in Sources */,
 				2309D4E11F94DABA00C53DFE /* Wireframe.swift in Sources */,
+				234A86EE1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift in Sources */,
 				23D538291F95AC510057433B /* SignupDataStore.swift in Sources */,
 				233A4A9C1FAB26940020C0D0 /* ConnectHeimuDataStore.swift in Sources */,
 				239FC26E1F8C827300BE1AE6 /* CustomButton.swift in Sources */,

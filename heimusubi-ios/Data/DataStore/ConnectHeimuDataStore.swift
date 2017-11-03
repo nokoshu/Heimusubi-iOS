@@ -9,8 +9,18 @@
 import Foundation
 
 protocol ConnectHeimuDataStore {
+    func registerHeimu(heimuName: String, address: String)
 }
 
 class ConnectHeimuDataStoreImplementation: ConnectHeimuDataStore {
-
+    func registerHeimu(heimuName: String, address: String) {
+        HeimusubiAPIClient.registerHeimu(heimuName: heimuName, address: address) { response in
+            switch response {
+            case .success(let value):
+                print("registered!!!")
+            case .error(let error):
+                print(error)
+            }
+        }
+    }
 }
