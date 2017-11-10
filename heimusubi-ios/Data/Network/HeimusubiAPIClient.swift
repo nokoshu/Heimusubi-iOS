@@ -56,7 +56,7 @@ final class HeimusubiAPIClient: APIClient {
                 // Signup
                 case let .Signup(userName, email, plainTextPassword):
                     params["user_name"] = userName
-                    params["email"] = email
+                    params["email"]     = email
                     params["plain_text_password"] = plainTextPassword
                 }
                 
@@ -66,6 +66,37 @@ final class HeimusubiAPIClient: APIClient {
             case Signin(email: String, plainTextPassword: String)
             case Signup(userName: String, email: String, plainTextPassword: String)
         }
+        
+        enum Heimu: Routable {
+            static let path = Router.host + "/heimu"
+
+            var urlString: String {
+                var path = Heimu.path
+                
+                switch self {
+                // Register
+                case .Register:
+                    path.append("/register")
+                }
+                
+                return path
+            }
+            
+            var parameters: Parameters {
+                var params: Parameters = [:]
+                
+                switch self {
+                // Register
+                case let .Register(heimuName, address):
+                    params["heimu_name"]  = heimuName
+                    params["address"]     = address
+                }
+                
+                return params
+            }
+            
+            case Register(heimuName: String, address: String)
+        }
     }
 }
 
@@ -73,6 +104,7 @@ final class HeimusubiAPIClient: APIClient {
 extension HeimusubiAPIClient {
     typealias SigninCompletionHandler = (Result<HeimusubiUserEntity>) -> Void
     typealias SignupCompletionHandler = (Result<HeimusubiUserEntity>) -> Void
+    typealias RegisterHeimuCompletionHandler = (Result<HeimusubiHeimuEntity>)  -> Void
 
     class func signin(email: String,
                       plainTextPassword: String,
@@ -89,6 +121,16 @@ extension HeimusubiAPIClient {
                       plainTextPassword: String,
                       completionHandler: SignupCompletionHandler? = nil) {
         let router = HeimusubiAPIClient.Router.Auth.Signup(userName: userName, email: email, plainTextPassword: plainTextPassword)
+        let urlString = router.urlString
+        let parameters = router.parameters
+        
+        HeimusubiAPIClient.request(url: urlString, method: .post, parameters: parameters, completionHandler: completionHandler)
+    }
+    
+    class func registerHeimu(heimuName: String,
+                             address: String,
+                             completionHandler: RegisterHeimuCompletionHandler? = nil) {
+        let router = HeimusubiAPIClient.Router.Heimu.Register(heimuName: heimuName, address: address)
         let urlString = router.urlString
         let parameters = router.parameters
         

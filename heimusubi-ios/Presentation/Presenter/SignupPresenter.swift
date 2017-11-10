@@ -10,6 +10,7 @@ import Foundation
 
 protocol SignupPresenter {
     func signupButtonPressed(userName: String, email: String, password: String)
+    func signupCompleted()
     func backToSigninButtonPressed()
 }
 
@@ -26,8 +27,14 @@ class SignupPresenterImplementation: SignupPresenter {
         self.useCase.signup(useName: userName, email: email, password: password)
     }
     
+    func signupCompleted() {
+        self.wireframe.showRegisterHeimu()
+    }
+    
+    
     func backToSigninButtonPressed() {
-        self.wireframe.backToSignin()
+        self.wireframe.showRegisterHeimu()
+//        self.wireframe.backToSignin()
     }
     
 }
