@@ -16,4 +16,9 @@ struct ConnectHeimuWireframe: WireFrame {
     init(viewController: ViewController) {
         self.viewController = viewController
     }
+    
+    func showMain() {
+        let nextViewController = MainTabBarController()
+        self.viewController.present(nextViewController, animated: true, completion: nil)
+    }
 }

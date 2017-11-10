@@ -23,7 +23,8 @@ class ConnectHeimuPresenterImplementation: ConnectHeimuPresenter {
     
     
     func registerButtonPressed(heimuName: String, address: String) {
-        self.useCase.registerHeimu(heimuName: heimuName, address: address)
+//        self.useCase.registerHeimu(heimuName: heimuName, address: address)
+        self.wireframe.showMain()
     }
     
 }

@@ -48,6 +48,8 @@
 		239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2701F8C8ADC00BE1AE6 /* Const.swift */; };
 		239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */; };
 		239FC2751F8CB49C00BE1AE6 /* SigninPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */; };
+		23C5AFA61FB5B8B70083A3D0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5AFA41FB5B8B70083A3D0 /* MainTabBarController.swift */; };
+		23C5AFA71FB5B8B70083A3D0 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C5AFA51FB5B8B70083A3D0 /* MainTabBarController.xib */; };
 		23D5381E1F959CE40057433B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5381C1F959CE40057433B /* SignupViewController.swift */; };
 		23D5381F1F959CE40057433B /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D5381D1F959CE40057433B /* SignupViewController.xib */; };
 		23D538211F959FE90057433B /* SignupViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D538201F959FE90057433B /* SignupViewControllerBuilder.swift */; };
@@ -140,6 +142,8 @@
 		239FC2701F8C8ADC00BE1AE6 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninPresenter.swift; sourceTree = "<group>"; };
+		23C5AFA41FB5B8B70083A3D0 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		23C5AFA51FB5B8B70083A3D0 /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
 		23D5381C1F959CE40057433B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		23D5381D1F959CE40057433B /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		23D538201F959FE90057433B /* SignupViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewControllerBuilder.swift; sourceTree = "<group>"; };
@@ -413,6 +417,8 @@
 				23EC09A21FA1DBD300AF1F6F /* ConnectHeimuViewController.xib */,
 				232460111FB441BA00B5906A /* DetectHeimuViewController.swift */,
 				232460121FB441BA00B5906A /* DetectHeimuViewController.xib */,
+				23C5AFA41FB5B8B70083A3D0 /* MainTabBarController.swift */,
+				23C5AFA51FB5B8B70083A3D0 /* MainTabBarController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -620,6 +626,7 @@
 				23EC09A41FA1DBD300AF1F6F /* ConnectHeimuViewController.xib in Resources */,
 				23F8FC981F9DAF220077FBED /* RegisterHeimuViewController.xib in Resources */,
 				239FC2691F8C80B300BE1AE6 /* SigninViewController.xib in Resources */,
+				23C5AFA71FB5B8B70083A3D0 /* MainTabBarController.xib in Resources */,
 				23D5381F1F959CE40057433B /* SignupViewController.xib in Resources */,
 				233666FE1F8783F100E8044B /* LaunchScreen.storyboard in Resources */,
 				233666FB1F8783F100E8044B /* Assets.xcassets in Resources */,
@@ -849,6 +856,7 @@
 				232460181FB4421F00B5906A /* DetectHeimuWireframe.swift in Sources */,
 				235AE7B51F93172500C79D3B /* HeimusubiUsersModel.swift in Sources */,
 				23F8FC9E1F9DB1CF0077FBED /* RegisterHeimuUseCase.swift in Sources */,
+				23C5AFA61FB5B8B70083A3D0 /* MainTabBarController.swift in Sources */,
 				23F169F71F97135800C2BEDB /* SignupWireframe.swift in Sources */,
 				23EC09A31FA1DBD300AF1F6F /* ConnectHeimuViewController.swift in Sources */,
 				239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */,
