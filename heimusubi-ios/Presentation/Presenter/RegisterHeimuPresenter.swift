@@ -35,7 +35,7 @@ class RegisterHeimuPresenterImplementation: RegisterHeimuPresenter {
                 if element.name == "BlueZ 5.47" {
                     print("デバイスの名前: 竹之下遼 の Raspberry Pi")
                 } else {
-                    print("デバイスの名前: \(element.name!)")
+                    print("デバイスの名前: \(element.name)")
                 }
                 print("デバイスのUUID: \(element.identifier)")
             }

@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct BootHeimuWireframe: WireFrame {
-    typealias ViewController = BootHeimuViewController
+struct DetectHeimuWireframe: WireFrame {
+    typealias ViewController = DetectHeimuViewController
     
     fileprivate let viewController: ViewController!
     
@@ -18,7 +18,7 @@ struct BootHeimuWireframe: WireFrame {
     }
     
     func showConnectHeimuView() {
-        let nextViewController = DetectHeimuViewControllerBuilder.build()
+        let nextViewController = ConnectHeimuViewControllerBuilder.build()
         self.viewController.present(nextViewController, animated: true, completion: nil)
     }
 }
