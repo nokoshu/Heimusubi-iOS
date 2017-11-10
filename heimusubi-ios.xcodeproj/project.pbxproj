@@ -18,11 +18,25 @@
 		2313E9511F90C2F600E938BA /* SigninRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313E9501F90C2F600E938BA /* SigninRepository.swift */; };
 		231416C51F906F98001C777D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231416C41F906F98001C777D /* APIClient.swift */; };
 		231416C71F907221001C777D /* HeimusubiAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231416C61F907221001C777D /* HeimusubiAPIClient.swift */; };
+		232460131FB441BA00B5906A /* DetectHeimuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232460111FB441BA00B5906A /* DetectHeimuViewController.swift */; };
+		232460141FB441BA00B5906A /* DetectHeimuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232460121FB441BA00B5906A /* DetectHeimuViewController.xib */; };
+		232460161FB441F700B5906A /* DetectHeimuViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232460151FB441F700B5906A /* DetectHeimuViewControllerBuilder.swift */; };
+		232460181FB4421F00B5906A /* DetectHeimuWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232460171FB4421F00B5906A /* DetectHeimuWireframe.swift */; };
+		2324601A1FB4423E00B5906A /* DetectHeimuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232460191FB4423E00B5906A /* DetectHeimuPresenter.swift */; };
+		2324601C1FB4426800B5906A /* DetectHeimuUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324601B1FB4426800B5906A /* DetectHeimuUseCase.swift */; };
+		2332916A1FB5801800C92CD2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233291681FB5801800C92CD2 /* CustomTableViewCell.swift */; };
+		2332916B1FB5801800C92CD2 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233291691FB5801800C92CD2 /* CustomTableViewCell.xib */; };
 		233666F41F8783F100E8044B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233666F31F8783F100E8044B /* AppDelegate.swift */; };
 		233666FB1F8783F100E8044B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233666FA1F8783F100E8044B /* Assets.xcassets */; };
 		233666FE1F8783F100E8044B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233666FC1F8783F100E8044B /* LaunchScreen.storyboard */; };
 		233667091F8783F100E8044B /* heimusubi_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233667081F8783F100E8044B /* heimusubi_iosTests.swift */; };
 		233667141F8783F100E8044B /* heimusubi_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233667131F8783F100E8044B /* heimusubi_iosUITests.swift */; };
+		233A4A941FAB25380020C0D0 /* ConnectHeimuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A4A931FAB25380020C0D0 /* ConnectHeimuPresenter.swift */; };
+		233A4A961FAB25740020C0D0 /* ConnectHeimuWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A4A951FAB25740020C0D0 /* ConnectHeimuWireframe.swift */; };
+		233A4A981FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A4A971FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift */; };
+		233A4A9A1FAB26600020C0D0 /* ConnectHeimuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A4A991FAB26600020C0D0 /* ConnectHeimuRepository.swift */; };
+		233A4A9C1FAB26940020C0D0 /* ConnectHeimuDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A4A9B1FAB26940020C0D0 /* ConnectHeimuDataStore.swift */; };
+		234A86EE1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234A86ED1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift */; };
 		234B04AA1F8A54F40038E76D /* ViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */; };
 		234B04AC1F8A58F80038E76D /* SigninViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */; };
 		235AE7AF1F93101900C79D3B /* HeimusubiUsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235AE7AE1F93101900C79D3B /* HeimusubiUsersTranslator.swift */; };
@@ -42,7 +56,21 @@
 		23D538271F95ABB20057433B /* SignupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D538261F95ABB20057433B /* SignupRepository.swift */; };
 		23D538291F95AC510057433B /* SignupDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D538281F95AC510057433B /* SignupDataStore.swift */; };
 		23E8E8D31F90EE5E002C557B /* SigninDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E8E8D21F90EE5E002C557B /* SigninDataStore.swift */; };
+		23EC099A1FA1D93E00AF1F6F /* RegisterHeimuWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC09991FA1D93E00AF1F6F /* RegisterHeimuWireframe.swift */; };
+		23EC099D1FA1DAAE00AF1F6F /* BootHeimuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC099B1FA1DAAE00AF1F6F /* BootHeimuViewController.swift */; };
+		23EC099E1FA1DAAE00AF1F6F /* BootHeimuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23EC099C1FA1DAAE00AF1F6F /* BootHeimuViewController.xib */; };
+		23EC09A01FA1DB5C00AF1F6F /* BootHeimuViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC099F1FA1DB5C00AF1F6F /* BootHeimuViewControllerBuilder.swift */; };
+		23EC09A31FA1DBD300AF1F6F /* ConnectHeimuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC09A11FA1DBD300AF1F6F /* ConnectHeimuViewController.swift */; };
+		23EC09A41FA1DBD300AF1F6F /* ConnectHeimuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23EC09A21FA1DBD300AF1F6F /* ConnectHeimuViewController.xib */; };
+		23EC09A61FA1DBE900AF1F6F /* ConnectHeimuViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC09A51FA1DBE900AF1F6F /* ConnectHeimuViewControllerBuilder.swift */; };
+		23EC09A81FA1DC0300AF1F6F /* BootHeimuWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC09A71FA1DC0300AF1F6F /* BootHeimuWireframe.swift */; };
+		23EC09AA1FA1DFC100AF1F6F /* BootHeimuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC09A91FA1DFC100AF1F6F /* BootHeimuPresenter.swift */; };
 		23F169F71F97135800C2BEDB /* SignupWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F169F61F97135800C2BEDB /* SignupWireframe.swift */; };
+		23F8FC971F9DAF220077FBED /* RegisterHeimuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8FC951F9DAF220077FBED /* RegisterHeimuViewController.swift */; };
+		23F8FC981F9DAF220077FBED /* RegisterHeimuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F8FC961F9DAF220077FBED /* RegisterHeimuViewController.xib */; };
+		23F8FC9A1F9DAF6D0077FBED /* RegisterHeimuViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8FC991F9DAF6D0077FBED /* RegisterHeimuViewControllerBuilder.swift */; };
+		23F8FC9C1F9DB0580077FBED /* RegisterHeimuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8FC9B1F9DB0580077FBED /* RegisterHeimuPresenter.swift */; };
+		23F8FC9E1F9DB1CF0077FBED /* RegisterHeimuUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8FC9D1F9DB1CF0077FBED /* RegisterHeimuUseCase.swift */; };
 		64D9D72A80C4921FF6FBF242 /* Pods_heimusubi_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C39F365DA9D98A837A4F6D /* Pods_heimusubi_iosTests.framework */; };
 		8EC892BD104542C054C05D7E /* Pods_heimusubi_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E3E6EEC9478D93BD6D512A /* Pods_heimusubi_iosUITests.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +104,14 @@
 		2313E9501F90C2F600E938BA /* SigninRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRepository.swift; sourceTree = "<group>"; };
 		231416C41F906F98001C777D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		231416C61F907221001C777D /* HeimusubiAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeimusubiAPIClient.swift; sourceTree = "<group>"; };
+		232460111FB441BA00B5906A /* DetectHeimuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectHeimuViewController.swift; sourceTree = "<group>"; };
+		232460121FB441BA00B5906A /* DetectHeimuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetectHeimuViewController.xib; sourceTree = "<group>"; };
+		232460151FB441F700B5906A /* DetectHeimuViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectHeimuViewControllerBuilder.swift; sourceTree = "<group>"; };
+		232460171FB4421F00B5906A /* DetectHeimuWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectHeimuWireframe.swift; sourceTree = "<group>"; };
+		232460191FB4423E00B5906A /* DetectHeimuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectHeimuPresenter.swift; sourceTree = "<group>"; };
+		2324601B1FB4426800B5906A /* DetectHeimuUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectHeimuUseCase.swift; sourceTree = "<group>"; };
+		233291681FB5801800C92CD2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		233291691FB5801800C92CD2 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		233666F01F8783F100E8044B /* heimusubi-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "heimusubi-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		233666F31F8783F100E8044B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		233666FA1F8783F100E8044B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +123,12 @@
 		2336670F1F8783F100E8044B /* heimusubi-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "heimusubi-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		233667131F8783F100E8044B /* heimusubi_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heimusubi_iosUITests.swift; sourceTree = "<group>"; };
 		233667151F8783F100E8044B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		233A4A931FAB25380020C0D0 /* ConnectHeimuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuPresenter.swift; sourceTree = "<group>"; };
+		233A4A951FAB25740020C0D0 /* ConnectHeimuWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuWireframe.swift; sourceTree = "<group>"; };
+		233A4A971FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuUseCase.swift; sourceTree = "<group>"; };
+		233A4A991FAB26600020C0D0 /* ConnectHeimuRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuRepository.swift; sourceTree = "<group>"; };
+		233A4A9B1FAB26940020C0D0 /* ConnectHeimuDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuDataStore.swift; sourceTree = "<group>"; };
+		234A86ED1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeimusubiHeimuEntity.swift; sourceTree = "<group>"; };
 		234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuilder.swift; sourceTree = "<group>"; };
 		234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewControllerBuilder.swift; sourceTree = "<group>"; };
 		235AE7AE1F93101900C79D3B /* HeimusubiUsersTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeimusubiUsersTranslator.swift; sourceTree = "<group>"; };
@@ -106,7 +148,21 @@
 		23D538261F95ABB20057433B /* SignupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRepository.swift; sourceTree = "<group>"; };
 		23D538281F95AC510057433B /* SignupDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDataStore.swift; sourceTree = "<group>"; };
 		23E8E8D21F90EE5E002C557B /* SigninDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninDataStore.swift; sourceTree = "<group>"; };
+		23EC09991FA1D93E00AF1F6F /* RegisterHeimuWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterHeimuWireframe.swift; sourceTree = "<group>"; };
+		23EC099B1FA1DAAE00AF1F6F /* BootHeimuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootHeimuViewController.swift; sourceTree = "<group>"; };
+		23EC099C1FA1DAAE00AF1F6F /* BootHeimuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BootHeimuViewController.xib; sourceTree = "<group>"; };
+		23EC099F1FA1DB5C00AF1F6F /* BootHeimuViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BootHeimuViewControllerBuilder.swift; sourceTree = "<group>"; };
+		23EC09A11FA1DBD300AF1F6F /* ConnectHeimuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectHeimuViewController.swift; sourceTree = "<group>"; };
+		23EC09A21FA1DBD300AF1F6F /* ConnectHeimuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectHeimuViewController.xib; sourceTree = "<group>"; };
+		23EC09A51FA1DBE900AF1F6F /* ConnectHeimuViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuViewControllerBuilder.swift; sourceTree = "<group>"; };
+		23EC09A71FA1DC0300AF1F6F /* BootHeimuWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BootHeimuWireframe.swift; sourceTree = "<group>"; };
+		23EC09A91FA1DFC100AF1F6F /* BootHeimuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BootHeimuPresenter.swift; sourceTree = "<group>"; };
 		23F169F61F97135800C2BEDB /* SignupWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWireframe.swift; sourceTree = "<group>"; };
+		23F8FC951F9DAF220077FBED /* RegisterHeimuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterHeimuViewController.swift; sourceTree = "<group>"; };
+		23F8FC961F9DAF220077FBED /* RegisterHeimuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterHeimuViewController.xib; sourceTree = "<group>"; };
+		23F8FC991F9DAF6D0077FBED /* RegisterHeimuViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterHeimuViewControllerBuilder.swift; sourceTree = "<group>"; };
+		23F8FC9B1F9DB0580077FBED /* RegisterHeimuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterHeimuPresenter.swift; sourceTree = "<group>"; };
+		23F8FC9D1F9DB1CF0077FBED /* RegisterHeimuUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterHeimuUseCase.swift; sourceTree = "<group>"; };
 		32DCF064655524172822697B /* Pods_heimusubi_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D524FDFC33B4C7F0A37FF07 /* Pods-heimusubi-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heimusubi-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-heimusubi-iosUITests/Pods-heimusubi-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		57E3E6EEC9478D93BD6D512A /* Pods_heimusubi_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heimusubi_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +207,10 @@
 				2309D4E01F94DABA00C53DFE /* Wireframe.swift */,
 				2309D4E21F94DB2A00C53DFE /* SigninWireframe.swift */,
 				23F169F61F97135800C2BEDB /* SignupWireframe.swift */,
+				23EC09991FA1D93E00AF1F6F /* RegisterHeimuWireframe.swift */,
+				23EC09A71FA1DC0300AF1F6F /* BootHeimuWireframe.swift */,
+				232460171FB4421F00B5906A /* DetectHeimuWireframe.swift */,
+				233A4A951FAB25740020C0D0 /* ConnectHeimuWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -159,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				2313E94A1F90BD8D00E938BA /* HeimusubiUserEntity.swift */,
+				234A86ED1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -168,6 +229,9 @@
 			children = (
 				2313E94D1F90C20700E938BA /* SigninUseCase.swift */,
 				23D538241F95AA610057433B /* SignupUseCase.swift */,
+				23F8FC9D1F9DB1CF0077FBED /* RegisterHeimuUseCase.swift */,
+				233A4A971FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift */,
+				2324601B1FB4426800B5906A /* DetectHeimuUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -177,6 +241,7 @@
 			children = (
 				2313E9501F90C2F600E938BA /* SigninRepository.swift */,
 				23D538261F95ABB20057433B /* SignupRepository.swift */,
+				233A4A991FAB26600020C0D0 /* ConnectHeimuRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -188,6 +253,15 @@
 				231416C61F907221001C777D /* HeimusubiAPIClient.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		233291631FB57E3700C92CD2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				233291681FB5801800C92CD2 /* CustomTableViewCell.swift */,
+				233291691FB5801800C92CD2 /* CustomTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		233666E71F8783F100E8044B = {
@@ -279,8 +353,8 @@
 		234B04A71F8A52E20038E76D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				234B04AE1F8A5B840038E76D /* Presenter */,
 				234B04AD1F8A5B780038E76D /* UI */,
+				234B04AE1F8A5B840038E76D /* Presenter */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -292,6 +366,10 @@
 				234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */,
 				23D538201F959FE90057433B /* SignupViewControllerBuilder.swift */,
 				2309D4E81F94DC3B00C53DFE /* MainViewControllerBuilder.swift */,
+				23F8FC991F9DAF6D0077FBED /* RegisterHeimuViewControllerBuilder.swift */,
+				23EC099F1FA1DB5C00AF1F6F /* BootHeimuViewControllerBuilder.swift */,
+				23EC09A51FA1DBE900AF1F6F /* ConnectHeimuViewControllerBuilder.swift */,
+				232460151FB441F700B5906A /* DetectHeimuViewControllerBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -310,6 +388,10 @@
 			children = (
 				239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */,
 				23D538221F95A28A0057433B /* SignupPresenter.swift */,
+				23F8FC9B1F9DB0580077FBED /* RegisterHeimuPresenter.swift */,
+				23EC09A91FA1DFC100AF1F6F /* BootHeimuPresenter.swift */,
+				233A4A931FAB25380020C0D0 /* ConnectHeimuPresenter.swift */,
+				232460191FB4423E00B5906A /* DetectHeimuPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -323,6 +405,14 @@
 				239FC2671F8C80B300BE1AE6 /* SigninViewController.xib */,
 				23D5381C1F959CE40057433B /* SignupViewController.swift */,
 				23D5381D1F959CE40057433B /* SignupViewController.xib */,
+				23F8FC951F9DAF220077FBED /* RegisterHeimuViewController.swift */,
+				23F8FC961F9DAF220077FBED /* RegisterHeimuViewController.xib */,
+				23EC099B1FA1DAAE00AF1F6F /* BootHeimuViewController.swift */,
+				23EC099C1FA1DAAE00AF1F6F /* BootHeimuViewController.xib */,
+				23EC09A11FA1DBD300AF1F6F /* ConnectHeimuViewController.swift */,
+				23EC09A21FA1DBD300AF1F6F /* ConnectHeimuViewController.xib */,
+				232460111FB441BA00B5906A /* DetectHeimuViewController.swift */,
+				232460121FB441BA00B5906A /* DetectHeimuViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -339,6 +429,7 @@
 		239FC26A1F8C822A00BE1AE6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				233291631FB57E3700C92CD2 /* Cell */,
 				239FC26C1F8C824700BE1AE6 /* TextField */,
 				239FC26B1F8C823D00BE1AE6 /* Button */,
 			);
@@ -374,6 +465,7 @@
 			children = (
 				23E8E8D21F90EE5E002C557B /* SigninDataStore.swift */,
 				23D538281F95AC510057433B /* SignupDataStore.swift */,
+				233A4A9B1FAB26940020C0D0 /* ConnectHeimuDataStore.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -525,11 +617,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EC09A41FA1DBD300AF1F6F /* ConnectHeimuViewController.xib in Resources */,
+				23F8FC981F9DAF220077FBED /* RegisterHeimuViewController.xib in Resources */,
 				239FC2691F8C80B300BE1AE6 /* SigninViewController.xib in Resources */,
 				23D5381F1F959CE40057433B /* SignupViewController.xib in Resources */,
 				233666FE1F8783F100E8044B /* LaunchScreen.storyboard in Resources */,
 				233666FB1F8783F100E8044B /* Assets.xcassets in Resources */,
+				232460141FB441BA00B5906A /* DetectHeimuViewController.xib in Resources */,
 				2309D4E71F94DBFF00C53DFE /* MainViewController.xib in Resources */,
+				2332916B1FB5801800C92CD2 /* CustomTableViewCell.xib in Resources */,
+				23EC099E1FA1DAAE00AF1F6F /* BootHeimuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,31 +803,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EC09A01FA1DB5C00AF1F6F /* BootHeimuViewControllerBuilder.swift in Sources */,
+				2324601A1FB4423E00B5906A /* DetectHeimuPresenter.swift in Sources */,
 				235AE7AF1F93101900C79D3B /* HeimusubiUsersTranslator.swift in Sources */,
 				239FC2751F8CB49C00BE1AE6 /* SigninPresenter.swift in Sources */,
 				23D5381E1F959CE40057433B /* SignupViewController.swift in Sources */,
 				239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */,
+				23F8FC9C1F9DB0580077FBED /* RegisterHeimuPresenter.swift in Sources */,
 				235AE7B11F93139A00C79D3B /* Translator.swift in Sources */,
 				239FC2681F8C80B300BE1AE6 /* SigninViewController.swift in Sources */,
+				2332916A1FB5801800C92CD2 /* CustomTableViewCell.swift in Sources */,
+				232460161FB441F700B5906A /* DetectHeimuViewControllerBuilder.swift in Sources */,
 				23D538211F959FE90057433B /* SignupViewControllerBuilder.swift in Sources */,
 				2313E9511F90C2F600E938BA /* SigninRepository.swift in Sources */,
+				23F8FC971F9DAF220077FBED /* RegisterHeimuViewController.swift in Sources */,
 				231416C51F906F98001C777D /* APIClient.swift in Sources */,
+				23EC09A61FA1DBE900AF1F6F /* ConnectHeimuViewControllerBuilder.swift in Sources */,
 				2313E94E1F90C20700E938BA /* SigninUseCase.swift in Sources */,
 				234B04AA1F8A54F40038E76D /* ViewControllerBuilder.swift in Sources */,
 				234B04AC1F8A58F80038E76D /* SigninViewControllerBuilder.swift in Sources */,
 				233666F41F8783F100E8044B /* AppDelegate.swift in Sources */,
+				233A4A981FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift in Sources */,
+				233A4A9A1FAB26600020C0D0 /* ConnectHeimuRepository.swift in Sources */,
+				23F8FC9A1F9DAF6D0077FBED /* RegisterHeimuViewControllerBuilder.swift in Sources */,
+				23EC099A1FA1D93E00AF1F6F /* RegisterHeimuWireframe.swift in Sources */,
 				231416C71F907221001C777D /* HeimusubiAPIClient.swift in Sources */,
+				23EC09AA1FA1DFC100AF1F6F /* BootHeimuPresenter.swift in Sources */,
 				2313E94B1F90BD8D00E938BA /* HeimusubiUserEntity.swift in Sources */,
 				23D538251F95AA610057433B /* SignupUseCase.swift in Sources */,
 				2309D4E91F94DC3B00C53DFE /* MainViewControllerBuilder.swift in Sources */,
 				2309D4E31F94DB2A00C53DFE /* SigninWireframe.swift in Sources */,
 				23E8E8D31F90EE5E002C557B /* SigninDataStore.swift in Sources */,
+				23EC099D1FA1DAAE00AF1F6F /* BootHeimuViewController.swift in Sources */,
 				2309D4E11F94DABA00C53DFE /* Wireframe.swift in Sources */,
+				234A86EE1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift in Sources */,
 				23D538291F95AC510057433B /* SignupDataStore.swift in Sources */,
+				232460131FB441BA00B5906A /* DetectHeimuViewController.swift in Sources */,
+				2324601C1FB4426800B5906A /* DetectHeimuUseCase.swift in Sources */,
+				233A4A9C1FAB26940020C0D0 /* ConnectHeimuDataStore.swift in Sources */,
 				239FC26E1F8C827300BE1AE6 /* CustomButton.swift in Sources */,
+				23EC09A81FA1DC0300AF1F6F /* BootHeimuWireframe.swift in Sources */,
+				233A4A961FAB25740020C0D0 /* ConnectHeimuWireframe.swift in Sources */,
 				23D538271F95ABB20057433B /* SignupRepository.swift in Sources */,
+				233A4A941FAB25380020C0D0 /* ConnectHeimuPresenter.swift in Sources */,
+				232460181FB4421F00B5906A /* DetectHeimuWireframe.swift in Sources */,
 				235AE7B51F93172500C79D3B /* HeimusubiUsersModel.swift in Sources */,
+				23F8FC9E1F9DB1CF0077FBED /* RegisterHeimuUseCase.swift in Sources */,
 				23F169F71F97135800C2BEDB /* SignupWireframe.swift in Sources */,
+				23EC09A31FA1DBD300AF1F6F /* ConnectHeimuViewController.swift in Sources */,
 				239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */,
 				23D538231F95A28A0057433B /* SignupPresenter.swift in Sources */,
 				2309D4E61F94DBFF00C53DFE /* MainViewController.swift in Sources */,
