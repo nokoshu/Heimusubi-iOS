@@ -15,7 +15,7 @@ class MainTabBarController: UITabBarController {
 
         var viewControllers: [UIViewController] = []
         
-        let firstViewController = MainViewController()
+        let firstViewController = MainViewControllerBuilder.build()
         firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.mostRecent, tag: 1)
         viewControllers.append(firstViewController)
  
