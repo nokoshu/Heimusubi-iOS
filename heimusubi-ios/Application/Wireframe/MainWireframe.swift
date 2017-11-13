@@ -11,11 +11,16 @@ import Foundation
 struct MainWireframe: WireFrame {
     typealias ViewController = MainViewController
     
-    fileprivate weak var viewController: MainViewController?
+    fileprivate weak var viewController: MainViewController!
     
     init(viewController: ViewController) {
         self.viewController = viewController
     }
     
-
+    
+    func showRecordPopupView() {
+        let nextViewController = RecordPopupViewControllerBuilder.build()
+        nextViewController.modalPresentationStyle = .overCurrentContext
+        self.viewController.present(nextViewController, animated: true, completion: nil)
+    }
 }

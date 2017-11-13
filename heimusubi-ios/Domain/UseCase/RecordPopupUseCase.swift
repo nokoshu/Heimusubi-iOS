@@ -9,66 +9,14 @@
 import Foundation
 import CoreBluetooth
 
-protocol DetectHeimuUseCase {
-    func starScanPeripheral()
-    func stopScanPeripheral()
-    func getScannedPeripherals() -> Array<CBPeripheral>
+protocol RecordPopupUseCase {
+
 }
 
-class DetectHeimuUseCaseImplementation: NSObject, DetectHeimuUseCase, CBCentralManagerDelegate {
-    fileprivate var centralManager: CBCentralManager!
-    fileprivate var scannedPeripherals: [CBPeripheral] = []
-    fileprivate var peripheral: CBPeripheral!
+class RecordPopupUseCaseImplementation: RecordPopupUseCase {
+
     
     
-    override init() {
-        super.init()
-        self.centralManager = CBCentralManager(delegate: self, queue: nil)
-    }
-    
-    
-    func starScanPeripheral() {
-        self.centralManager.scanForPeripherals(withServices: nil, options: nil)
-    }
-    
-    
-    func stopScanPeripheral() {
-        self.centralManager.stopScan()
-    }
-    
-    
-    func getScannedPeripherals() -> Array<CBPeripheral> {
-        return self.scannedPeripherals
-    }
-    
-    
-    /*---------------------------
-     * CBCentralManagerDelegate
-     *-------------------------*/
-    func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        print("state: \(central.state)")
-        if central.state == CBManagerState.poweredOn {
-            print("start scan")
-            self.centralManager.scanForPeripherals(withServices: nil, options: nil)
-        } else {
-            print("not ready")
-        }
-    }
-    
-    
-    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        if self.scannedPeripherals.contains(peripheral) == false {
-            self.scannedPeripherals.append(peripheral)
-        }
-    }
-    
-    
-    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
-        print("connected!")
-    }
-    
-    func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
-        print("faild...")
-    }
+
 }
 

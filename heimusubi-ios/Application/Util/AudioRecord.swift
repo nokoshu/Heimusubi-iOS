@@ -13,7 +13,7 @@ class AudioRecord {
     fileprivate var audioRecorder: AVAudioRecorder?
     
     init() {
-        let filePath = NSHomeDirectory() + "/Documents/test.m4a"
+        let filePath = NSHomeDirectory() + "/Documents/test2.m4a"
         let url = URL(fileURLWithPath: filePath)
         
         // 再生と録音の機能をアクティブにする
@@ -35,7 +35,6 @@ class AudioRecord {
         } catch {
             
         }
-
     }
     
     func start() {

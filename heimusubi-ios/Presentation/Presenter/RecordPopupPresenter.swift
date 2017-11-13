@@ -8,50 +8,20 @@
 
 import Foundation
 
-protocol DetectHeimuPresenter {
-    func searchHeimu()
-    func tappedTableViewCell()
+protocol RecordPopupPresenter {
+
 }
 
-protocol DetectHeimuPresenterInput {
-    func setPeripheralList(peripheralList: Array<String>)
-}
 
-class DetectHeimuPresenterImplementation: DetectHeimuPresenter {
-    fileprivate let useCase: DetectHeimuUseCase!
-    fileprivate let wireframe: DetectHeimuWireframe!
-    fileprivate var viewController: DetectHeimuPresenterInput!
+class RecordPopupPresenterImplementation: RecordPopupPresenter {
+    fileprivate let useCase: RecordPopupUseCase!
+    fileprivate let wireframe: RecordPopupWireframe!
 
     
     
-    init(wireframe: DetectHeimuWireframe, useCase: DetectHeimuUseCase) {
+    init(wireframe: RecordPopupWireframe, useCase: RecordPopupUseCase) {
         self.wireframe  = wireframe
         self.useCase    = useCase
-    }
-    
-    func inject(viewController: DetectHeimuPresenterInput) {
-        self.viewController = viewController
-    }
-    
-    
-    func searchHeimu() {
-        // Searching Bluetooth is activated automatically.
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.useCase.stopScanPeripheral()
-            let scannedPeripherals = self.useCase.getScannedPeripherals()
-            var list: [String] = []
-            for (index, element) in scannedPeripherals.enumerated() {
-                if let name = element.name {
-                    list.append(name)
-                }
-            }
-            
-            self.viewController.setPeripheralList(peripheralList: list)
-        }
-    }
-    
-    func tappedTableViewCell() {
-        self.wireframe.showConnectHeimuView()
     }
     
 }

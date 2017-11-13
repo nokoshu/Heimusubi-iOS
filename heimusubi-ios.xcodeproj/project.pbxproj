@@ -49,6 +49,12 @@
 		239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */; };
 		239FC2751F8CB49C00BE1AE6 /* SigninPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */; };
 		23C2BA5F1FB9B06300F77AEE /* AudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C2BA5E1FB9B06300F77AEE /* AudioRecord.swift */; };
+		23C2BA651FB9CB4D00F77AEE /* RecordPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C2BA631FB9CB4D00F77AEE /* RecordPopupViewController.swift */; };
+		23C2BA661FB9CB4D00F77AEE /* RecordPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C2BA641FB9CB4D00F77AEE /* RecordPopupViewController.xib */; };
+		23C2BA681FB9CC9C00F77AEE /* RecordpopupWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C2BA671FB9CC9C00F77AEE /* RecordpopupWireframe.swift */; };
+		23C2BA6A1FB9CCCD00F77AEE /* RecordPopupViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C2BA691FB9CCCD00F77AEE /* RecordPopupViewControllerBuilder.swift */; };
+		23C2BA6C1FB9CE2900F77AEE /* RecordPopupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C2BA6B1FB9CE2900F77AEE /* RecordPopupPresenter.swift */; };
+		23C2BA6E1FB9CEC500F77AEE /* RecordPopupUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C2BA6D1FB9CEC500F77AEE /* RecordPopupUseCase.swift */; };
 		23C5AFA61FB5B8B70083A3D0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5AFA41FB5B8B70083A3D0 /* MainTabBarController.swift */; };
 		23C5AFA71FB5B8B70083A3D0 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C5AFA51FB5B8B70083A3D0 /* MainTabBarController.xib */; };
 		23C5AFA91FB5C31A0083A3D0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5AFA81FB5C31A0083A3D0 /* MainPresenter.swift */; };
@@ -149,6 +155,12 @@
 		239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninPresenter.swift; sourceTree = "<group>"; };
 		23C2BA5E1FB9B06300F77AEE /* AudioRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecord.swift; sourceTree = "<group>"; };
+		23C2BA631FB9CB4D00F77AEE /* RecordPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPopupViewController.swift; sourceTree = "<group>"; };
+		23C2BA641FB9CB4D00F77AEE /* RecordPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordPopupViewController.xib; sourceTree = "<group>"; };
+		23C2BA671FB9CC9C00F77AEE /* RecordpopupWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordpopupWireframe.swift; sourceTree = "<group>"; };
+		23C2BA691FB9CCCD00F77AEE /* RecordPopupViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordPopupViewControllerBuilder.swift; sourceTree = "<group>"; };
+		23C2BA6B1FB9CE2900F77AEE /* RecordPopupPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordPopupPresenter.swift; sourceTree = "<group>"; };
+		23C2BA6D1FB9CEC500F77AEE /* RecordPopupUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordPopupUseCase.swift; sourceTree = "<group>"; };
 		23C5AFA41FB5B8B70083A3D0 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		23C5AFA51FB5B8B70083A3D0 /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
 		23C5AFA81FB5C31A0083A3D0 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
@@ -228,6 +240,7 @@
 				23EC09A71FA1DC0300AF1F6F /* BootHeimuWireframe.swift */,
 				232460171FB4421F00B5906A /* DetectHeimuWireframe.swift */,
 				233A4A951FAB25740020C0D0 /* ConnectHeimuWireframe.swift */,
+				23C2BA671FB9CC9C00F77AEE /* RecordpopupWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -250,6 +263,7 @@
 				23F8FC9D1F9DB1CF0077FBED /* RegisterHeimuUseCase.swift */,
 				233A4A971FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift */,
 				2324601B1FB4426800B5906A /* DetectHeimuUseCase.swift */,
+				23C2BA6D1FB9CEC500F77AEE /* RecordPopupUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -390,6 +404,7 @@
 				23EC099F1FA1DB5C00AF1F6F /* BootHeimuViewControllerBuilder.swift */,
 				23EC09A51FA1DBE900AF1F6F /* ConnectHeimuViewControllerBuilder.swift */,
 				232460151FB441F700B5906A /* DetectHeimuViewControllerBuilder.swift */,
+				23C2BA691FB9CCCD00F77AEE /* RecordPopupViewControllerBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -413,6 +428,7 @@
 				23EC09A91FA1DFC100AF1F6F /* BootHeimuPresenter.swift */,
 				233A4A931FAB25380020C0D0 /* ConnectHeimuPresenter.swift */,
 				232460191FB4423E00B5906A /* DetectHeimuPresenter.swift */,
+				23C2BA6B1FB9CE2900F77AEE /* RecordPopupPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -436,6 +452,8 @@
 				232460121FB441BA00B5906A /* DetectHeimuViewController.xib */,
 				23C5AFA41FB5B8B70083A3D0 /* MainTabBarController.swift */,
 				23C5AFA51FB5B8B70083A3D0 /* MainTabBarController.xib */,
+				23C2BA631FB9CB4D00F77AEE /* RecordPopupViewController.swift */,
+				23C2BA641FB9CB4D00F77AEE /* RecordPopupViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -452,6 +470,7 @@
 		239FC26A1F8C822A00BE1AE6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23C2BA601FB9C33C00F77AEE /* View */,
 				233291631FB57E3700C92CD2 /* Cell */,
 				239FC26C1F8C824700BE1AE6 /* TextField */,
 				239FC26B1F8C823D00BE1AE6 /* Button */,
@@ -489,6 +508,13 @@
 				23C2BA5E1FB9B06300F77AEE /* AudioRecord.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		23C2BA601FB9C33C00F77AEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		23E8E8D11F90EE4C002C557B /* DataStore */ = {
@@ -649,6 +675,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23C2BA661FB9CB4D00F77AEE /* RecordPopupViewController.xib in Resources */,
 				23EC09A41FA1DBD300AF1F6F /* ConnectHeimuViewController.xib in Resources */,
 				23F8FC981F9DAF220077FBED /* RegisterHeimuViewController.xib in Resources */,
 				239FC2691F8C80B300BE1AE6 /* SigninViewController.xib in Resources */,
@@ -840,6 +867,7 @@
 				2324601A1FB4423E00B5906A /* DetectHeimuPresenter.swift in Sources */,
 				235AE7AF1F93101900C79D3B /* HeimusubiUsersTranslator.swift in Sources */,
 				239FC2751F8CB49C00BE1AE6 /* SigninPresenter.swift in Sources */,
+				23C2BA6C1FB9CE2900F77AEE /* RecordPopupPresenter.swift in Sources */,
 				23D5381E1F959CE40057433B /* SignupViewController.swift in Sources */,
 				239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */,
 				23F8FC9C1F9DB0580077FBED /* RegisterHeimuPresenter.swift in Sources */,
@@ -852,11 +880,15 @@
 				23F8FC971F9DAF220077FBED /* RegisterHeimuViewController.swift in Sources */,
 				231416C51F906F98001C777D /* APIClient.swift in Sources */,
 				23C5AFAD1FB5C39A0083A3D0 /* MainRepository.swift in Sources */,
+				23C2BA6E1FB9CEC500F77AEE /* RecordPopupUseCase.swift in Sources */,
 				23EC09A61FA1DBE900AF1F6F /* ConnectHeimuViewControllerBuilder.swift in Sources */,
+				23C2BA6A1FB9CCCD00F77AEE /* RecordPopupViewControllerBuilder.swift in Sources */,
 				2313E94E1F90C20700E938BA /* SigninUseCase.swift in Sources */,
 				234B04AA1F8A54F40038E76D /* ViewControllerBuilder.swift in Sources */,
 				234B04AC1F8A58F80038E76D /* SigninViewControllerBuilder.swift in Sources */,
+				23C2BA651FB9CB4D00F77AEE /* RecordPopupViewController.swift in Sources */,
 				233666F41F8783F100E8044B /* AppDelegate.swift in Sources */,
+				23C2BA681FB9CC9C00F77AEE /* RecordpopupWireframe.swift in Sources */,
 				233A4A981FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift in Sources */,
 				233A4A9A1FAB26600020C0D0 /* ConnectHeimuRepository.swift in Sources */,
 				23F8FC9A1F9DAF6D0077FBED /* RegisterHeimuViewControllerBuilder.swift in Sources */,

@@ -8,16 +8,16 @@
 
 import UIKit
 
-struct DetectHeimuViewControllerBuilder: ViewControllerBuilder {
-    typealias ViewController = DetectHeimuViewController
+struct RecordPopupViewControllerBuilder: ViewControllerBuilder {
+    typealias ViewController = RecordPopupViewController
     
     static func build() -> ViewController {
         let viewController      = ViewController()
-        let useCase             = DetectHeimuUseCaseImplementation()
-        let wireframe           = DetectHeimuWireframe(viewController: viewController)
-        let presenter           = DetectHeimuPresenterImplementation(wireframe: wireframe, useCase: useCase)
+        let useCase             = RecordPopupUseCaseImplementation()
+        let wireframe           = RecordPopupWireframe(viewController: viewController)
+        let presenter           = RecordPopupPresenterImplementation(wireframe: wireframe, useCase: useCase)
         
-        presenter.inject(viewController: viewController)
+//        presenter.inject(viewController: viewController)
         viewController.inject(presenter: presenter)
 
         return viewController
