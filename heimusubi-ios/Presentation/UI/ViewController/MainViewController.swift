@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  heimusubi-ios
 //
-//  Created by 竹之下遼 on 2017/10/16.
+//  Created by RyoBamboo on 2017/10/16.
 //  Copyright © 2017年 RyoBamboo. All rights reserved.
 //
 

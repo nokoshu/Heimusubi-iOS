@@ -48,6 +48,7 @@
 		239FC2711F8C8ADC00BE1AE6 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2701F8C8ADC00BE1AE6 /* Const.swift */; };
 		239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */; };
 		239FC2751F8CB49C00BE1AE6 /* SigninPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */; };
+		23C2BA5F1FB9B06300F77AEE /* AudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C2BA5E1FB9B06300F77AEE /* AudioRecord.swift */; };
 		23C5AFA61FB5B8B70083A3D0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5AFA41FB5B8B70083A3D0 /* MainTabBarController.swift */; };
 		23C5AFA71FB5B8B70083A3D0 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C5AFA51FB5B8B70083A3D0 /* MainTabBarController.xib */; };
 		23C5AFA91FB5C31A0083A3D0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C5AFA81FB5C31A0083A3D0 /* MainPresenter.swift */; };
@@ -147,6 +148,7 @@
 		239FC2701F8C8ADC00BE1AE6 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		239FC2721F8CA3FD00BE1AE6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninPresenter.swift; sourceTree = "<group>"; };
+		23C2BA5E1FB9B06300F77AEE /* AudioRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecord.swift; sourceTree = "<group>"; };
 		23C5AFA41FB5B8B70083A3D0 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		23C5AFA51FB5B8B70083A3D0 /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
 		23C5AFA81FB5C31A0083A3D0 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 		234B04A31F8A52400038E76D /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				23C2BA5D1FB9ADE600F77AEE /* Util */,
 				2309D4DF1F94DA9600C53DFE /* Wireframe */,
 				239FC26F1F8C8AC600BE1AE6 /* Const */,
 				234B04A81F8A54D00038E76D /* Builder */,
@@ -478,6 +481,14 @@
 				239FC2701F8C8ADC00BE1AE6 /* Const.swift */,
 			);
 			path = Const;
+			sourceTree = "<group>";
+		};
+		23C2BA5D1FB9ADE600F77AEE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				23C2BA5E1FB9B06300F77AEE /* AudioRecord.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		23E8E8D11F90EE4C002C557B /* DataStore */ = {
@@ -856,6 +867,7 @@
 				23D538251F95AA610057433B /* SignupUseCase.swift in Sources */,
 				2309D4E91F94DC3B00C53DFE /* MainViewControllerBuilder.swift in Sources */,
 				2309D4E31F94DB2A00C53DFE /* SigninWireframe.swift in Sources */,
+				23C2BA5F1FB9B06300F77AEE /* AudioRecord.swift in Sources */,
 				23E8E8D31F90EE5E002C557B /* SigninDataStore.swift in Sources */,
 				23EC099D1FA1DAAE00AF1F6F /* BootHeimuViewController.swift in Sources */,
 				23C5AFB11FB5C5C80083A3D0 /* MainWireframe.swift in Sources */,
