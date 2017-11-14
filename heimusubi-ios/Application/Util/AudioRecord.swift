@@ -46,4 +46,39 @@ class AudioRecord {
         print("録音しました")
         self.audioRecorder!.stop()
     }
+    
+    
+    func upload()
+    {
+        
+        let myUrl:URL = URL(string: "http:///voice/upload.php")!
+
+        do {
+            let fileurldata = try Data(contentsOf: self.audioRecorder!.url)
+            
+            let request = NSMutableURLRequest(url: myUrl)
+            request.httpMethod = "POST"
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.addValue("application/json", forHTTPHeaderField: "Accept")
+            let base64String = fileurldata.base64EncodedString(options: NSData.Base64EncodingOptions.lineLength64Characters)
+            
+            var _: NSError? = nil
+            let params = ["sound":[ "content_type": "audio/aac", "filename":"/Documents/test.m4a", "file_data": base64String]]
+            request.httpBody = try JSONSerialization.data(withJSONObject: params, options: JSONSerialization.WritingOptions(rawValue: 0))
+            
+            let session = URLSession.shared
+            let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error -> Void in
+                _ = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                var _: NSError?
+                
+                // process the response
+            })
+            
+            task.resume() // this is needed to start the task
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+
+    }
 }

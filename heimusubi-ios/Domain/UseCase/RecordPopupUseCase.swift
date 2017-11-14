@@ -11,6 +11,7 @@ import CoreBluetooth
 
 protocol RecordPopupUseCase {
     func recordStart()
+    func recordStop()
 }
 
 class RecordPopupUseCaseImplementation: RecordPopupUseCase {
@@ -26,6 +27,7 @@ class RecordPopupUseCaseImplementation: RecordPopupUseCase {
     
     func recordStop() {
         self.recorder.stop()
+        self.recorder.upload()
     }
 
 }

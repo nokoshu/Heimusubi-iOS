@@ -28,6 +28,9 @@ class RecordPopupPresenterImplementation: RecordPopupPresenter {
     
     func recordImageTapped() {
         self.useCase.recordStart()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.useCase.recordStop()
+        }
     }
     
     
