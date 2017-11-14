@@ -9,7 +9,8 @@
 import Foundation
 
 protocol RecordPopupPresenter {
-    func recordImagePressed()
+    func recordImageTapped()
+    func closeImageTapped()
 }
 
 
@@ -25,7 +26,12 @@ class RecordPopupPresenterImplementation: RecordPopupPresenter {
     }
     
     
-    func recordImagePressed() {
+    func recordImageTapped() {
         self.useCase.recordStart()
+    }
+    
+    
+    func closeImageTapped() {
+        self.wireframe.closePopup()
     }
 }

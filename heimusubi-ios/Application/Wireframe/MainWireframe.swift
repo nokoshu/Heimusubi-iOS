@@ -21,6 +21,7 @@ struct MainWireframe: WireFrame {
     func showRecordPopupView() {
         let nextViewController = RecordPopupViewControllerBuilder.build()
         nextViewController.modalPresentationStyle = .overCurrentContext
+        nextViewController.modalTransitionStyle = .crossDissolve
         self.viewController.present(nextViewController, animated: true, completion: nil)
     }
 }

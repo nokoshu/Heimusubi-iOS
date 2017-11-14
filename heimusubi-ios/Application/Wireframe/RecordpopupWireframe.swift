@@ -20,4 +20,9 @@ struct RecordPopupWireframe: WireFrame {
     func showMain() {
 
     }
+    
+    func closePopup() {
+        self.viewController.modalTransitionStyle = .crossDissolve
+        self.viewController.dismiss(animated: true, completion: nil)
+    }
 }
