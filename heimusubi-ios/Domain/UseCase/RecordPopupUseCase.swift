@@ -10,13 +10,23 @@ import Foundation
 import CoreBluetooth
 
 protocol RecordPopupUseCase {
-
+    func recordStart()
 }
 
 class RecordPopupUseCaseImplementation: RecordPopupUseCase {
-
+    fileprivate var recorder: AudioRecord!
     
+    init() {
+        self.recorder = AudioRecord()
+    }
     
+    func recordStart() {
+        self.recorder.start()
+    }
+    
+    func recordStop() {
+        self.recorder.stop()
+    }
 
 }
 

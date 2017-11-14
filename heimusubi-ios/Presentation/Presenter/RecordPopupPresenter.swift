@@ -9,7 +9,7 @@
 import Foundation
 
 protocol RecordPopupPresenter {
-
+    func recordImagePressed()
 }
 
 
@@ -24,4 +24,8 @@ class RecordPopupPresenterImplementation: RecordPopupPresenter {
         self.useCase    = useCase
     }
     
+    
+    func recordImagePressed() {
+        self.useCase.recordStart()
+    }
 }

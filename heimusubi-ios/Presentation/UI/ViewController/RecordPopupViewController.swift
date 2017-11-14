@@ -11,18 +11,20 @@ import UIKit
 class RecordPopupViewController: UIViewController {
     fileprivate var presenter: RecordPopupPresenter!
     
+    @IBOutlet weak var recordImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
 
-        // UIVisualEffectViewを生成する
+        // Setting for UIVisualEffectView
         let visualEffectView = UIVisualEffectView(frame: view.frame)
-        // エフェクトの種類を設定
         visualEffectView.effect = UIBlurEffect(style: .dark)
-        // UIVisualEffectViewを他のビューの下に挿入する
         view.insertSubview(visualEffectView, at: 0)
-        // Do any additional setup after loading the view.
+        
+        self.recordImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.heimuSignImageViewTapped(_:))))
+        self.recordImageView.isUserInteractionEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,15 +36,8 @@ class RecordPopupViewController: UIViewController {
         self.presenter = presenter
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func heimuSignImageViewTapped(_ sender: UITapGestureRecognizer) {
+        self.presenter.heimuSignImageViewPressed()
     }
-    */
 
 }
