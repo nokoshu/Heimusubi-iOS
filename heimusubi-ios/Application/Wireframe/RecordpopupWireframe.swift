@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct ConnectHeimuWireframe: WireFrame {
-    typealias ViewController = ConnectHeimuViewController
+struct RecordPopupWireframe: WireFrame {
+    typealias ViewController = RecordPopupViewController
     
     fileprivate let viewController: ViewController!
     
@@ -18,7 +18,11 @@ struct ConnectHeimuWireframe: WireFrame {
     }
     
     func showMain() {
-        let nextViewController = MainTabBarController()
-        self.viewController.present(nextViewController, animated: true, completion: nil)
+
+    }
+    
+    func closePopup() {
+        self.viewController.modalTransitionStyle = .crossDissolve
+        self.viewController.dismiss(animated: true, completion: nil)
     }
 }

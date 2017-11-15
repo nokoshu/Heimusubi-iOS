@@ -41,14 +41,6 @@
                     <color key="textColor" red="0.33333333329999998" green="0.27058823529999998" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lou-8W-Omw">
-                    <rect key="frame" x="138" y="480" width="123" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="へいむを検索する"/>
-                    <connections>
-                        <action selector="seachHeimuButtonPressed:" destination="-1" eventType="touchUpInside" id="c8f-g0-w3D"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
