@@ -11,7 +11,7 @@ import Foundation
 struct SigninWireframe: WireFrame {
     typealias ViewController = SigninViewController
     
-    fileprivate weak var viewController: SigninViewController?
+    fileprivate weak var viewController: SigninViewController!
     
     init(viewController: ViewController) {
         self.viewController = viewController

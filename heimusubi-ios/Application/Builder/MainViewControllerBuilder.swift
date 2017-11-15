@@ -13,6 +13,13 @@ struct MainViewControllerBuilder: ViewControllerBuilder {
     
     static func build() -> ViewController {
         let viewController      = MainViewController()
+        let wireframe           = MainWireframe(viewController: viewController)
+        let dataStore           = MainDataStoreImplementation()
+        let repository          = MainRepositoryImplementation(dataStore: dataStore)
+        let useCase             = MainUseCaseImplementation(repository: repository)
+        let presenter           = MainPresenterImplementation(useCase: useCase, wireframe: wireframe)
+        
+        viewController.inject(presenter: presenter)
         
         return viewController
     }
