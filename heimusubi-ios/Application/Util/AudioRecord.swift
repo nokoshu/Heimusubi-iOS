@@ -51,7 +51,7 @@ class AudioRecord {
     func upload()
     {
         
-        let myUrl:URL = URL(string: "http:///voice/upload.php")!
+        let myUrl:URL = URL(string: "http://design.prodrb.com/heimu.php")!
 
         do {
             let fileurldata = try Data(contentsOf: self.audioRecorder!.url)
@@ -63,7 +63,8 @@ class AudioRecord {
             let base64String = fileurldata.base64EncodedString(options: NSData.Base64EncodingOptions.lineLength64Characters)
             
             var _: NSError? = nil
-            let params = ["sound":[ "content_type": "audio/aac", "filename":"/Documents/test.m4a", "file_data": base64String]]
+            let params = ["sound":[ "content_type": "audio/aac", "filename":"file", "file_data": base64String]]
+
             request.httpBody = try JSONSerialization.data(withJSONObject: params, options: JSONSerialization.WritingOptions(rawValue: 0))
             
             let session = URLSession.shared
