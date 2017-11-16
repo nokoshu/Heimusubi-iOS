@@ -8,6 +8,7 @@ target 'heimusubi-ios' do
   # Pods for heimusubi-ios
   pod 'Alamofire', '4.5'
   pod 'ObjectMapper', '3.0'
+  pod 'CocoaMQTT', '1.0.19'
 
   target 'heimusubi-iosTests' do
     inherit! :search_paths

@@ -887,12 +887,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-heimusubi-ios/Pods-heimusubi-ios-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaMQTT/CocoaMQTT.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyTimer/SwiftyTimer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaMQTT.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTimer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1149,7 +1155,7 @@
 		};
 		2336671A1F8783F100E8044B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BFEE923B3DB2DE238B79127 /* Pods-heimusubi-ios.debug.xcconfig */;
+			baseConfigurationReference = 6CAF90984CA2FF656178EC01 /* Pods-heimusubi-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1165,7 +1171,7 @@
 		};
 		2336671C1F8783F100E8044B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BFEE923B3DB2DE238B79127 /* Pods-heimusubi-ios.debug.xcconfig */;
+			baseConfigurationReference = 9880FEEAF2914DD76B4063AF /* Pods-heimusubi-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1182,7 +1188,7 @@
 		};
 		2336671D1F8783F100E8044B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BFEE923B3DB2DE238B79127 /* Pods-heimusubi-ios.debug.xcconfig */;
+			baseConfigurationReference = A8B9D8214B95163A1EE36CF7 /* Pods-heimusubi-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1199,7 +1205,7 @@
 		};
 		2336671F1F8783F100E8044B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BFEE923B3DB2DE238B79127 /* Pods-heimusubi-ios.debug.xcconfig */;
+			baseConfigurationReference = 4D524FDFC33B4C7F0A37FF07 /* Pods-heimusubi-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1215,7 +1221,7 @@
 		};
 		233667201F8783F100E8044B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BFEE923B3DB2DE238B79127 /* Pods-heimusubi-ios.debug.xcconfig */;
+			baseConfigurationReference = 73EEC902AB2AA519C85026E8 /* Pods-heimusubi-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
