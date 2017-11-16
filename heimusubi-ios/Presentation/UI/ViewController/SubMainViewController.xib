@@ -20,6 +20,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubMainViewController" customModule="heimusubi_ios" customModuleProvider="target">
             <connections>
                 <outlet property="heimuImageView" destination="5xR-it-1zC" id="Mp3-gr-RRe"/>
+                <outlet property="statusImageView" destination="TWL-so-gap" id="ZWp-QA-CLu"/>
+                <outlet property="timeLabel" destination="s0w-xn-Vyx" id="nXM-88-2rN"/>
+                <outlet property="userNameLabel" destination="7Iu-Gr-8UP" id="yul-h8-uJj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

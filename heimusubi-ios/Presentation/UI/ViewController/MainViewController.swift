@@ -16,9 +16,20 @@ class MainViewController: UIViewController {
     fileprivate var mqttc: CocoaMQTT?
     
     @IBOutlet weak var heimuImageView: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //
+        let timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(getNowTime), userInfo: nil, repeats: true)
+        timer.fire()
+        
+        let userDefaults = UserDefaults.standard
+        let userName = userDefaults.string(forKey: "userName")
+        if userName != nil {
+            self.userNameLabel.text = userName
+        }
 
         // Do any additional setup after loading the view.
         self.heimuImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.heimuImageViewTapped(_:))))
@@ -31,7 +42,7 @@ class MainViewController: UIViewController {
         mqttSetting()
         mqttc!.connect()
         
-
+        
 
     }
     
@@ -42,12 +53,24 @@ class MainViewController: UIViewController {
             selector: #selector(self.viewWillEnterForeground),
             name: NSNotification.Name.UIApplicationWillEnterForeground,
             object: nil
-        )    }
+        )
+        
+    }
     
     func inject(presenter: MainPresenter) {
         self.presenter = presenter
     }
     
+    @objc func getNowTime() {
+        let now = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "a h:mm"
+        formatter.amSymbol = "AM"
+        formatter.pmSymbol = "PM"
+        let timeString = formatter.string(from: now)
+        
+        self.timeLabel.text = timeString
+    }
     
     @objc func viewWillEnterForeground() {
         self.presenter.heimuSignImageViewPressed()

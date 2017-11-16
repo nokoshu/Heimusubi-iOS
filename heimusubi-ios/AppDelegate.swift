@@ -18,13 +18,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override
-        
-        let rootVC = SigninViewControllerBuilder.build()
-        
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = rootVC
-        self.window?.makeKeyAndVisible()
-        
+        let userDefaults = UserDefaults.standard
+        userDefaults.removeObject(forKey: "isSignin")
+        let isSignin = userDefaults.bool(forKey: "isSignin")
+        print(isSignin)
+        if (isSignin == true) {
+            let rootVC = MainTabBarController()
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = rootVC
+            self.window?.makeKeyAndVisible()
+        } else {
+            let rootVC = SigninViewControllerBuilder.build()
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = rootVC
+            self.window?.makeKeyAndVisible()
+        }
 
         
         if #available(iOS 10.0, *) {

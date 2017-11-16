@@ -32,6 +32,10 @@ class SigninPresenterImplementation: SigninPresenter {
     }
     
     func useCase(didSigninUser user: HeimusubiUserModel) {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(true, forKey: "isSignin")
+        userDefaults.set(user.userName, forKey: "userName")
+        userDefaults.synchronize()
         self.wireframe.showMain()
     }
 

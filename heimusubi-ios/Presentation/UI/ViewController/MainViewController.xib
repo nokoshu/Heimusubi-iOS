@@ -20,6 +20,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="heimusubi_ios" customModuleProvider="target">
             <connections>
                 <outlet property="heimuImageView" destination="7jN-HU-Kug" id="3Rc-Fe-xCF"/>
+                <outlet property="timeLabel" destination="bSO-Rw-jSk" id="SyM-Zg-O1m"/>
+                <outlet property="userNameLabel" destination="lSI-2j-rfa" id="bgd-GS-DNz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -60,7 +62,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PM 4:34" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSO-Rw-jSk">
-                    <rect key="frame" x="101" y="31" width="177" height="72"/>
+                    <rect key="frame" x="0.0" y="31" width="375" height="72"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
                     <color key="textColor" red="0.33333333329999998" green="0.27058823529999998" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
