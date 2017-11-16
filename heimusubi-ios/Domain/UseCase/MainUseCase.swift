@@ -9,7 +9,7 @@
 import Foundation
 
 protocol MainUseCase: class {
-
+    func getWeatherStatus(addressId: Int)
 }
 
 final class MainUseCaseImplementation: MainUseCase {
@@ -22,6 +22,10 @@ final class MainUseCaseImplementation: MainUseCase {
     
     func inject(presenter: MainPresenter) {
         self.presenter = presenter
+    }
+    
+    func getWeatherStatus(addressId: Int) {
+        self.repository.getWeatherStatus(addressId: addressId)
     }
 
 }

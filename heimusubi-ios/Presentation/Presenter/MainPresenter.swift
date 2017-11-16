@@ -9,6 +9,7 @@
 import Foundation
 
 protocol MainPresenter {
+    func getWeatherStatus()
     func heimuSignImageViewPressed()
 }
 
@@ -23,12 +24,10 @@ class MainPresenterImplementation: MainPresenter {
     
     func heimuSignImageViewPressed() {
         self.wireframe.showRecordPopupView()
-//        print("音声クラスをセットアップします")
-//        let audioSource: AudioRecord = AudioRecord()
-//        audioSource.start()
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-//            audioSource.stop()
-//        }
+    }
+    
+    func getWeatherStatus() {
+        self.useCase.getWeatherStatus(addressId: 1)
     }
 
 

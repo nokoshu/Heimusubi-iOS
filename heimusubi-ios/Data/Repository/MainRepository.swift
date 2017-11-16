@@ -9,7 +9,7 @@
 import Foundation
 
 protocol MainRepository: class {
-    
+    func getWeatherStatus(addressId: Int)
 }
 
 final class MainRepositoryImplementation: MainRepository {
@@ -24,4 +24,7 @@ final class MainRepositoryImplementation: MainRepository {
         self.useCase = useCase
     }
 
+    func getWeatherStatus(addressId: Int) {
+        self.dataStore.getWeatherStatus(addressId: addressId)
+    }
 }

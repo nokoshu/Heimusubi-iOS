@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
     var backgroundTaskID : UIBackgroundTaskIdentifier = 0
@@ -24,6 +25,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = rootVC
         self.window?.makeKeyAndVisible()
         
+
+        
+        if #available(iOS 10.0, *) {
+            // iOS 10
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.badge, .sound, .alert], completionHandler: { (granted, error) in
+                if error != nil {
+                    return
+                }
+                
+                if granted {
+                    print("通知許可")
+                    
+                    let center = UNUserNotificationCenter.current()
+                    center.delegate = self
+                    
+                } else {
+                    print("通知拒否")
+                }
+            })
+            
+        }
+        
         return true
     }
 
@@ -35,6 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             application.endBackgroundTask((self?.backgroundTaskID)!)
             self?.backgroundTaskID = UIBackgroundTaskInvalid
         }
+
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -55,6 +80,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse,
+                                withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(true, forKey: "fromNotification")
+        userDefaults.synchronize()
+        print("起動されたよ！")
+    
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "applicationWillEnterForeground"), object: nil)
+
+
+        
+        completionHandler()
+    }
 
 }
 

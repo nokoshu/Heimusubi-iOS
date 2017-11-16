@@ -18,7 +18,7 @@ struct SigninWireframe: WireFrame {
     }
     
     func showMain() {
-        let nextViewController = MainViewControllerBuilder.build()
+        let nextViewController = MainTabBarController()
         self.viewController?.present(nextViewController, animated: true, completion: nil)
     }
     

@@ -55,6 +55,7 @@
 		235AE7AF1F93101900C79D3B /* HeimusubiUsersTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235AE7AE1F93101900C79D3B /* HeimusubiUsersTranslator.swift */; };
 		235AE7B11F93139A00C79D3B /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235AE7B01F93139A00C79D3B /* Translator.swift */; };
 		235AE7B51F93172500C79D3B /* HeimusubiUsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235AE7B41F93172500C79D3B /* HeimusubiUsersModel.swift */; };
+		238BA1551FBD67DC00CFA29D /* HeimusubAddressEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA1541FBD67DC00CFA29D /* HeimusubAddressEntity.swift */; };
 		239FC2681F8C80B300BE1AE6 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC2661F8C80B300BE1AE6 /* SigninViewController.swift */; };
 		239FC2691F8C80B300BE1AE6 /* SigninViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239FC2671F8C80B300BE1AE6 /* SigninViewController.xib */; };
 		239FC26E1F8C827300BE1AE6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FC26D1F8C827300BE1AE6 /* CustomButton.swift */; };
@@ -174,6 +175,7 @@
 		235AE7AE1F93101900C79D3B /* HeimusubiUsersTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeimusubiUsersTranslator.swift; sourceTree = "<group>"; };
 		235AE7B01F93139A00C79D3B /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		235AE7B41F93172500C79D3B /* HeimusubiUsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeimusubiUsersModel.swift; sourceTree = "<group>"; };
+		238BA1541FBD67DC00CFA29D /* HeimusubAddressEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeimusubAddressEntity.swift; sourceTree = "<group>"; };
 		239FC2661F8C80B300BE1AE6 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		239FC2671F8C80B300BE1AE6 /* SigninViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninViewController.xib; sourceTree = "<group>"; };
 		239FC26D1F8C827300BE1AE6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 			children = (
 				2313E94A1F90BD8D00E938BA /* HeimusubiUserEntity.swift */,
 				234A86ED1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift */,
+				238BA1541FBD67DC00CFA29D /* HeimusubAddressEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -920,6 +923,7 @@
 				23D5381E1F959CE40057433B /* SignupViewController.swift in Sources */,
 				239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */,
 				23F8FC9C1F9DB0580077FBED /* RegisterHeimuPresenter.swift in Sources */,
+				238BA1551FBD67DC00CFA29D /* HeimusubAddressEntity.swift in Sources */,
 				234858861FBC13B0001B1FC9 /* SubMainPresenter.swift in Sources */,
 				235AE7B11F93139A00C79D3B /* Translator.swift in Sources */,
 				234858911FBC2A41001B1FC9 /* MessageViewController.swift in Sources */,

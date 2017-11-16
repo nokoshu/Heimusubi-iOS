@@ -8,6 +8,8 @@
 
 import UIKit
 import CocoaMQTT
+import UserNotifications
+
 
 class MainViewController: UIViewController {
     fileprivate var presenter: MainPresenter!
@@ -22,13 +24,33 @@ class MainViewController: UIViewController {
         self.heimuImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.heimuImageViewTapped(_:))))
         self.heimuImageView.isUserInteractionEnabled = true
         
+        // Get Weather Status
+        getWeatherStatus()
+        
         // Setting Mqtt and Connect
         mqttSetting()
         mqttc!.connect()
+        
+
+
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.viewWillEnterForeground),
+            name: NSNotification.Name.UIApplicationWillEnterForeground,
+            object: nil
+        )    }
     
     func inject(presenter: MainPresenter) {
         self.presenter = presenter
+    }
+    
+    
+    @objc func viewWillEnterForeground() {
+        self.presenter.heimuSignImageViewPressed()
     }
     
     
@@ -52,6 +74,29 @@ class MainViewController: UIViewController {
         self.presenter.heimuSignImageViewPressed()
     }
     
+    func getWeatherStatus() {
+        let postString = "address_id=1"
+         
+        var request = URLRequest(url: URL(string: "http://heimusubi-server.herokuapp.com/api/weather/get")!)
+        request.httpMethod = "POST"
+        request.httpBody = postString.data(using: .utf8)
+         
+        let task = URLSession.shared.dataTask(with: request, completionHandler: {
+            (data, response, error) in
+             
+            if error != nil {
+                print(error)
+                return
+            }
+             
+            print("response: \(response!)")
+             
+            let phpOutput = String(data: data!, encoding: .utf8)!
+            print("php output: \(phpOutput)")
+        })
+        task.resume()
+    }
+    
 }
 
 
@@ -65,6 +110,19 @@ extension MainViewController: CocoaMQTTDelegate {
     
     func mqtt(_ mqtt: CocoaMQTT, didReceiveMessage message: CocoaMQTTMessage, id: UInt16 ) {
         print("Successfully Received Message: \(message.string ?? "")")
+        
+        let trigger: UNNotificationTrigger
+        let content = UNMutableNotificationContent()
+        trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        
+        content.title = "ただいまのお知らせ"
+        content.body = "まちこの家に住人が帰ってきました"
+        content.sound = UNNotificationSound.default()
+        
+        // 通知スタイルを指定
+        let request = UNNotificationRequest(identifier: "uuid", content: content, trigger: trigger)
+        // 通知をセット
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didSubscribeTopic topic: String) {
