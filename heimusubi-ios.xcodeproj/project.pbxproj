@@ -36,6 +36,19 @@
 		233A4A981FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A4A971FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift */; };
 		233A4A9A1FAB26600020C0D0 /* ConnectHeimuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A4A991FAB26600020C0D0 /* ConnectHeimuRepository.swift */; };
 		233A4A9C1FAB26940020C0D0 /* ConnectHeimuDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A4A9B1FAB26940020C0D0 /* ConnectHeimuDataStore.swift */; };
+		2348587B1FBC0AE1001B1FC9 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234858791FBC0AE1001B1FC9 /* MainPageViewController.swift */; };
+		2348587C1FBC0AE1001B1FC9 /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2348587A1FBC0AE1001B1FC9 /* MainPageViewController.xib */; };
+		2348587F1FBC115B001B1FC9 /* SubMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348587D1FBC115B001B1FC9 /* SubMainViewController.swift */; };
+		234858801FBC115B001B1FC9 /* SubMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2348587E1FBC115B001B1FC9 /* SubMainViewController.xib */; };
+		234858821FBC129A001B1FC9 /* SubMainViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234858811FBC129A001B1FC9 /* SubMainViewControllerBuilder.swift */; };
+		234858841FBC138E001B1FC9 /* SubMainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234858831FBC138E001B1FC9 /* SubMainWireframe.swift */; };
+		234858861FBC13B0001B1FC9 /* SubMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234858851FBC13B0001B1FC9 /* SubMainPresenter.swift */; };
+		234858881FBC13DD001B1FC9 /* SubMainUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234858871FBC13DD001B1FC9 /* SubMainUseCase.swift */; };
+		2348588B1FBC22A2001B1FC9 /* AddHeimuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234858891FBC22A2001B1FC9 /* AddHeimuViewController.swift */; };
+		2348588C1FBC22A2001B1FC9 /* AddHeimuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2348588A1FBC22A2001B1FC9 /* AddHeimuViewController.xib */; };
+		2348588E1FBC23B8001B1FC9 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348588D1FBC23B8001B1FC9 /* UIColorExtension.swift */; };
+		234858911FBC2A41001B1FC9 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348588F1FBC2A41001B1FC9 /* MessageViewController.swift */; };
+		234858921FBC2A41001B1FC9 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234858901FBC2A41001B1FC9 /* MessageViewController.xib */; };
 		234A86EE1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234A86ED1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift */; };
 		234B04AA1F8A54F40038E76D /* ViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */; };
 		234B04AC1F8A58F80038E76D /* SigninViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */; };
@@ -142,6 +155,19 @@
 		233A4A971FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuUseCase.swift; sourceTree = "<group>"; };
 		233A4A991FAB26600020C0D0 /* ConnectHeimuRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuRepository.swift; sourceTree = "<group>"; };
 		233A4A9B1FAB26940020C0D0 /* ConnectHeimuDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectHeimuDataStore.swift; sourceTree = "<group>"; };
+		234858791FBC0AE1001B1FC9 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		2348587A1FBC0AE1001B1FC9 /* MainPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
+		2348587D1FBC115B001B1FC9 /* SubMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMainViewController.swift; sourceTree = "<group>"; };
+		2348587E1FBC115B001B1FC9 /* SubMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubMainViewController.xib; sourceTree = "<group>"; };
+		234858811FBC129A001B1FC9 /* SubMainViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMainViewControllerBuilder.swift; sourceTree = "<group>"; };
+		234858831FBC138E001B1FC9 /* SubMainWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMainWireframe.swift; sourceTree = "<group>"; };
+		234858851FBC13B0001B1FC9 /* SubMainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMainPresenter.swift; sourceTree = "<group>"; };
+		234858871FBC13DD001B1FC9 /* SubMainUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMainUseCase.swift; sourceTree = "<group>"; };
+		234858891FBC22A2001B1FC9 /* AddHeimuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHeimuViewController.swift; sourceTree = "<group>"; };
+		2348588A1FBC22A2001B1FC9 /* AddHeimuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHeimuViewController.xib; sourceTree = "<group>"; };
+		2348588D1FBC23B8001B1FC9 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2348588F1FBC2A41001B1FC9 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		234858901FBC2A41001B1FC9 /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
 		234A86ED1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeimusubiHeimuEntity.swift; sourceTree = "<group>"; };
 		234B04A91F8A54F40038E76D /* ViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuilder.swift; sourceTree = "<group>"; };
 		234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewControllerBuilder.swift; sourceTree = "<group>"; };
@@ -235,6 +261,7 @@
 				2309D4E01F94DABA00C53DFE /* Wireframe.swift */,
 				2309D4E21F94DB2A00C53DFE /* SigninWireframe.swift */,
 				23C5AFB01FB5C5C80083A3D0 /* MainWireframe.swift */,
+				234858831FBC138E001B1FC9 /* SubMainWireframe.swift */,
 				23F169F61F97135800C2BEDB /* SignupWireframe.swift */,
 				23EC09991FA1D93E00AF1F6F /* RegisterHeimuWireframe.swift */,
 				23EC09A71FA1DC0300AF1F6F /* BootHeimuWireframe.swift */,
@@ -259,6 +286,7 @@
 			children = (
 				2313E94D1F90C20700E938BA /* SigninUseCase.swift */,
 				23C5AFAA1FB5C35B0083A3D0 /* MainUseCase.swift */,
+				234858871FBC13DD001B1FC9 /* SubMainUseCase.swift */,
 				23D538241F95AA610057433B /* SignupUseCase.swift */,
 				23F8FC9D1F9DB1CF0077FBED /* RegisterHeimuUseCase.swift */,
 				233A4A971FAB25AE0020C0D0 /* ConnectHeimuUseCase.swift */,
@@ -400,6 +428,7 @@
 				234B04AB1F8A58F80038E76D /* SigninViewControllerBuilder.swift */,
 				23D538201F959FE90057433B /* SignupViewControllerBuilder.swift */,
 				2309D4E81F94DC3B00C53DFE /* MainViewControllerBuilder.swift */,
+				234858811FBC129A001B1FC9 /* SubMainViewControllerBuilder.swift */,
 				23F8FC991F9DAF6D0077FBED /* RegisterHeimuViewControllerBuilder.swift */,
 				23EC099F1FA1DB5C00AF1F6F /* BootHeimuViewControllerBuilder.swift */,
 				23EC09A51FA1DBE900AF1F6F /* ConnectHeimuViewControllerBuilder.swift */,
@@ -423,6 +452,7 @@
 			children = (
 				239FC2741F8CB49C00BE1AE6 /* SigninPresenter.swift */,
 				23C5AFA81FB5C31A0083A3D0 /* MainPresenter.swift */,
+				234858851FBC13B0001B1FC9 /* SubMainPresenter.swift */,
 				23D538221F95A28A0057433B /* SignupPresenter.swift */,
 				23F8FC9B1F9DB0580077FBED /* RegisterHeimuPresenter.swift */,
 				23EC09A91FA1DFC100AF1F6F /* BootHeimuPresenter.swift */,
@@ -454,6 +484,14 @@
 				23C5AFA51FB5B8B70083A3D0 /* MainTabBarController.xib */,
 				23C2BA631FB9CB4D00F77AEE /* RecordPopupViewController.swift */,
 				23C2BA641FB9CB4D00F77AEE /* RecordPopupViewController.xib */,
+				234858791FBC0AE1001B1FC9 /* MainPageViewController.swift */,
+				2348587A1FBC0AE1001B1FC9 /* MainPageViewController.xib */,
+				2348587D1FBC115B001B1FC9 /* SubMainViewController.swift */,
+				2348587E1FBC115B001B1FC9 /* SubMainViewController.xib */,
+				234858891FBC22A2001B1FC9 /* AddHeimuViewController.swift */,
+				2348588A1FBC22A2001B1FC9 /* AddHeimuViewController.xib */,
+				2348588F1FBC2A41001B1FC9 /* MessageViewController.swift */,
+				234858901FBC2A41001B1FC9 /* MessageViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -506,6 +544,7 @@
 			isa = PBXGroup;
 			children = (
 				23C2BA5E1FB9B06300F77AEE /* AudioRecord.swift */,
+				2348588D1FBC23B8001B1FC9 /* UIColorExtension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -675,8 +714,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234858801FBC115B001B1FC9 /* SubMainViewController.xib in Resources */,
 				23C2BA661FB9CB4D00F77AEE /* RecordPopupViewController.xib in Resources */,
 				23EC09A41FA1DBD300AF1F6F /* ConnectHeimuViewController.xib in Resources */,
+				2348588C1FBC22A2001B1FC9 /* AddHeimuViewController.xib in Resources */,
 				23F8FC981F9DAF220077FBED /* RegisterHeimuViewController.xib in Resources */,
 				239FC2691F8C80B300BE1AE6 /* SigninViewController.xib in Resources */,
 				23C5AFA71FB5B8B70083A3D0 /* MainTabBarController.xib in Resources */,
@@ -685,7 +726,9 @@
 				233666FB1F8783F100E8044B /* Assets.xcassets in Resources */,
 				232460141FB441BA00B5906A /* DetectHeimuViewController.xib in Resources */,
 				2309D4E71F94DBFF00C53DFE /* MainViewController.xib in Resources */,
+				2348587C1FBC0AE1001B1FC9 /* MainPageViewController.xib in Resources */,
 				2332916B1FB5801800C92CD2 /* CustomTableViewCell.xib in Resources */,
+				234858921FBC2A41001B1FC9 /* MessageViewController.xib in Resources */,
 				23EC099E1FA1DAAE00AF1F6F /* BootHeimuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -871,7 +914,9 @@
 				23D5381E1F959CE40057433B /* SignupViewController.swift in Sources */,
 				239FC2731F8CA3FD00BE1AE6 /* CustomTextField.swift in Sources */,
 				23F8FC9C1F9DB0580077FBED /* RegisterHeimuPresenter.swift in Sources */,
+				234858861FBC13B0001B1FC9 /* SubMainPresenter.swift in Sources */,
 				235AE7B11F93139A00C79D3B /* Translator.swift in Sources */,
+				234858911FBC2A41001B1FC9 /* MessageViewController.swift in Sources */,
 				239FC2681F8C80B300BE1AE6 /* SigninViewController.swift in Sources */,
 				2332916A1FB5801800C92CD2 /* CustomTableViewCell.swift in Sources */,
 				232460161FB441F700B5906A /* DetectHeimuViewControllerBuilder.swift in Sources */,
@@ -897,11 +942,14 @@
 				23EC09AA1FA1DFC100AF1F6F /* BootHeimuPresenter.swift in Sources */,
 				2313E94B1F90BD8D00E938BA /* HeimusubiUserEntity.swift in Sources */,
 				23D538251F95AA610057433B /* SignupUseCase.swift in Sources */,
+				234858881FBC13DD001B1FC9 /* SubMainUseCase.swift in Sources */,
 				2309D4E91F94DC3B00C53DFE /* MainViewControllerBuilder.swift in Sources */,
+				2348588E1FBC23B8001B1FC9 /* UIColorExtension.swift in Sources */,
 				2309D4E31F94DB2A00C53DFE /* SigninWireframe.swift in Sources */,
 				23C2BA5F1FB9B06300F77AEE /* AudioRecord.swift in Sources */,
 				23E8E8D31F90EE5E002C557B /* SigninDataStore.swift in Sources */,
 				23EC099D1FA1DAAE00AF1F6F /* BootHeimuViewController.swift in Sources */,
+				2348588B1FBC22A2001B1FC9 /* AddHeimuViewController.swift in Sources */,
 				23C5AFB11FB5C5C80083A3D0 /* MainWireframe.swift in Sources */,
 				2309D4E11F94DABA00C53DFE /* Wireframe.swift in Sources */,
 				234A86EE1FAC22D600ED8B38 /* HeimusubiHeimuEntity.swift in Sources */,
@@ -911,14 +959,18 @@
 				2324601C1FB4426800B5906A /* DetectHeimuUseCase.swift in Sources */,
 				233A4A9C1FAB26940020C0D0 /* ConnectHeimuDataStore.swift in Sources */,
 				239FC26E1F8C827300BE1AE6 /* CustomButton.swift in Sources */,
+				234858821FBC129A001B1FC9 /* SubMainViewControllerBuilder.swift in Sources */,
 				23EC09A81FA1DC0300AF1F6F /* BootHeimuWireframe.swift in Sources */,
+				2348587F1FBC115B001B1FC9 /* SubMainViewController.swift in Sources */,
 				23C5AFAF1FB5C3F20083A3D0 /* MainDataStore.swift in Sources */,
 				233A4A961FAB25740020C0D0 /* ConnectHeimuWireframe.swift in Sources */,
 				23D538271F95ABB20057433B /* SignupRepository.swift in Sources */,
 				233A4A941FAB25380020C0D0 /* ConnectHeimuPresenter.swift in Sources */,
 				23C5AFAB1FB5C35B0083A3D0 /* MainUseCase.swift in Sources */,
 				232460181FB4421F00B5906A /* DetectHeimuWireframe.swift in Sources */,
+				234858841FBC138E001B1FC9 /* SubMainWireframe.swift in Sources */,
 				235AE7B51F93172500C79D3B /* HeimusubiUsersModel.swift in Sources */,
+				2348587B1FBC0AE1001B1FC9 /* MainPageViewController.swift in Sources */,
 				23F8FC9E1F9DB1CF0077FBED /* RegisterHeimuUseCase.swift in Sources */,
 				23C5AFA61FB5B8B70083A3D0 /* MainTabBarController.swift in Sources */,
 				23F169F71F97135800C2BEDB /* SignupWireframe.swift in Sources */,
