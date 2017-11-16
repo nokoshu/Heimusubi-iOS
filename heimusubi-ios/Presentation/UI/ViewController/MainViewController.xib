@@ -32,6 +32,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="9lQ-ca-ads">
+                    <rect key="frame" x="323" y="445" width="20" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heimu_occupied" translatesAutoresizingMaskIntoConstraints="NO" id="7jN-HU-Kug">
                     <rect key="frame" x="34" y="243" width="319" height="319"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -69,6 +73,7 @@
         </view>
     </objects>
     <resources>
+        <image name="arrow_right" width="106" height="147"/>
         <image name="background_main" width="375" height="667"/>
         <image name="health_happy" width="730" height="827"/>
         <image name="heimu_occupied" width="866" height="984"/>

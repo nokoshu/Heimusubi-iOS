@@ -13,7 +13,7 @@ class AudioRecord {
     fileprivate var audioRecorder: AVAudioRecorder?
     
     init() {
-        let filePath = NSHomeDirectory() + "/Documents/test2.m4a"
+        let filePath = NSHomeDirectory() + "/Documents/test2.caf"
         let url = URL(fileURLWithPath: filePath)
         
         // 再生と録音の機能をアクティブにする
@@ -23,12 +23,13 @@ class AudioRecord {
         
 
         let recordSetting = [
-            AVFormatIDKey: Int(kAudioFormatAppleLossless),
             AVSampleRateKey: 44100,
             AVNumberOfChannelsKey: 2,
             AVEncoderBitRateKey: 16,
             AVEncoderAudioQualityKey: AVAudioQuality.min.rawValue
         ]
+        
+        
 
         do {
             self.audioRecorder = try AVAudioRecorder(url: url, settings: recordSetting)

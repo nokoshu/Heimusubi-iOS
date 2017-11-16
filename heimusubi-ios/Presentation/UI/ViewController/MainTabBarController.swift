@@ -12,12 +12,24 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Setting Background Color
+        UITabBar.appearance().backgroundImage = UIImage(named: "background_tabbar")
+        
         var viewControllers: [UIViewController] = []
         
-        let firstViewController = MainViewControllerBuilder.build()
-        firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.mostRecent, tag: 1)
+        let firstViewController = MainPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+        firstViewController.tabBarItem = UITabBarItem(title: "test", image: UIImage(named: "icon_setting"), tag: 1)
         viewControllers.append(firstViewController)
+        
+        let secondViewController = AddHeimuViewController()
+        secondViewController.tabBarItem = UITabBarItem(title: "tet", image: UIImage(named: "icon_heimu_add"), tag: 2)
+        viewControllers.append(secondViewController)
+
+        let thirdViewController = MessageViewController()
+        thirdViewController.tabBarItem = UITabBarItem(title: "tet", image: UIImage(named: "icon_message"), tag: 3)
+        viewControllers.append(thirdViewController)
+
  
         self.setViewControllers(viewControllers, animated: false)
         
