@@ -72,7 +72,7 @@ class AudioRecord {
             let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error -> Void in
                 _ = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
                 var _: NSError?
-                
+                print("送信したよ")
                 // process the response
             })
             

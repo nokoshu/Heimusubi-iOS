@@ -14,10 +14,12 @@ import UserNotifications
 class MainViewController: UIViewController {
     fileprivate var presenter: MainPresenter!
     fileprivate var mqttc: CocoaMQTT?
+    fileprivate var weatherId: String?
     
     @IBOutlet weak var heimuImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var weatherStatusImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,11 @@ class MainViewController: UIViewController {
         let userName = userDefaults.string(forKey: "userName")
         if userName != nil {
             self.userNameLabel.text = userName
+            if userName == "みちこの家" {
+                weatherId = "129"
+            } else {
+                weatherId = "222"
+            }
         }
 
         // Do any additional setup after loading the view.
@@ -98,7 +105,7 @@ class MainViewController: UIViewController {
     }
     
     func getWeatherStatus() {
-        let postString = "address_id=1"
+        let postString = "address_id=" + weatherId!
          
         var request = URLRequest(url: URL(string: "http://heimusubi-server.herokuapp.com/api/weather/get")!)
         request.httpMethod = "POST"
@@ -114,9 +121,16 @@ class MainViewController: UIViewController {
              
             print("response: \(response!)")
              
-            let phpOutput = String(data: data!, encoding: .utf8)!
-            print("php output: \(phpOutput)")
-        })
+            let newWeatherStatus = String(data: data!, encoding: .utf8)!
+            if newWeatherStatus == "0" {
+                self.weatherStatusImageView.image = UIImage(named: "weather_sunny")
+            } else if newWeatherStatus == "1" {
+                self.weatherStatusImageView.image = UIImage(named: "weahter_cloudy")
+            } else {
+                self.weatherStatusImageView.image = UIImage(named: "weather_rainy")
+            }        })
+        
+
         task.resume()
     }
     
@@ -128,24 +142,36 @@ extension MainViewController: CocoaMQTTDelegate {
         print("Successfully Received Ack Message")
         if ack == .accept {
             mqtt.subscribe("voice/status", qos: CocoaMQTTQOS.qos0)
+            mqtt.subscribe("occupied/status", qos: CocoaMQTTQOS.qos0)
         }
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didReceiveMessage message: CocoaMQTTMessage, id: UInt16 ) {
         print("Successfully Received Message: \(message.string ?? "")")
+        var data = message.string!
         
-        let trigger: UNNotificationTrigger
-        let content = UNMutableNotificationContent()
-        trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-        
-        content.title = "ただいまのお知らせ"
-        content.body = "まちこの家に住人が帰ってきました"
-        content.sound = UNNotificationSound.default()
-        
-        // 通知スタイルを指定
-        let request = UNNotificationRequest(identifier: "uuid", content: content, trigger: trigger)
-        // 通知をセット
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        if (data.contains("_") == true) {
+            let split = data.components(separatedBy: "_")
+            let name = split[0]
+            let status = split[1]
+            
+            
+        } else {
+            
+            let trigger: UNNotificationTrigger
+            let content = UNMutableNotificationContent()
+            trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+            
+            content.title = "ただいまのお知らせ"
+            content.body = "まちこの家に住人が帰ってきました"
+            content.sound = UNNotificationSound.default()
+            
+            // 通知スタイルを指定
+            let request = UNNotificationRequest(identifier: "uuid", content: content, trigger: trigger)
+            // 通知をセット
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        }
+
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didSubscribeTopic topic: String) {
